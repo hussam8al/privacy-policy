@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Barcode Scanner &amp; QR Reader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent: #3b82f6;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --success: #10b981;
+      --badge-bg: #dbeafe;
+      --badge-text: #1e40af;
+      --radius-lg: 16px;
+      --radius-md: 10px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 20px -2px rgba(0,0,0,0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 0;
+      margin: 0;
+    }
+
+    body.rtl {
+      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+      direction: rtl;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(37,99,235,0.25);
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .brand-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .lang-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      background: #dbeafe;
+      transform: translateY(-1px);
+    }
+
+    /* Main Container */
+    main {
+      max-width: 960px;
+      margin: 32px auto 60px;
+      padding: 0 20px;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+    }
+
+    /* Hero inside card */
+    .hero-section {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    .badge-pill {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+
+    .meta-info {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Content Styling */
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 32px 0 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 20px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 12px 0 20px 24px;
+      color: var(--text-muted);
+    }
+
+    body.rtl ul {
+      margin: 12px 24px 20px 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 0.96rem;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .highlight-box {
+      background: #f0fdf4;
+      border-left: 4px solid var(--success);
+      padding: 16px 20px;
+      border-radius: var(--radius-md);
+      margin: 24px 0;
+    }
+
+    body.rtl .highlight-box {
+      border-left: none;
+      border-right: 4px solid var(--success);
+    }
+
+    .highlight-box p {
+      color: #166534;
+      margin: 0;
+      font-weight: 500;
+    }
+
+    .contact-box {
+      background: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      padding: 24px;
+      border-radius: var(--radius-md);
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .contact-box h3 {
+      font-size: 1.1rem;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    .contact-box p {
+      color: #1e3a8a;
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 20px 40px;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Toggle visibility */
+    .lang-en, .lang-ar {
+      display: none;
+    }
+
+    body:not(.rtl) .lang-en {
+      display: block;
+    }
+
+    body.rtl .lang-ar {
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .policy-card {
+        padding: 24px 18px;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="brand-box">
+        <div class="brand-icon">QR</div>
+        <div>
+          <div class="brand-title">Barcode Scanner &amp; QR Reader</div>
+          <div class="brand-subtitle">com.Quick.apps.h1</div>
+        </div>
+      </div>
+      <button class="lang-btn" onclick="toggleLanguage()" id="langToggleBtn">
+        🌐 <span id="langBtnText">العربية (Arabic)</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="policy-card">
+
+      <!-- ================= ENGLISH VERSION ================= -->
+      <div class="lang-en">
+        <div class="hero-section">
+          <span class="badge-pill">Google Play Privacy Compliance</span>
+          <h1>Privacy Policy</h1>
+          <div class="meta-info">
+            <strong>App:</strong> Barcode Scanner &amp; QR Reader &bull; 
+            <strong>Package ID:</strong> com.Quick.apps.h1 &bull; 
+            <strong>Effective Date:</strong> September 1, 2026
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <p>🔒 <strong>Privacy First:</strong> Our application performs all barcode and QR code decoding locally on your device. We do not transmit or store your camera feed, images, or personal scan history on any remote server.</p>
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy explains how <strong>Barcode Scanner &amp; QR Reader</strong> ("we", "our", or "the app") treats user information when you use our mobile application. We are fully committed to protecting your privacy and ensuring transparent handling of permissions.</p>
+
+        <h2>2. Data Collection &amp; Processing</h2>
+        <p>We believe in data minimization. The application operates with offline-first principles:</p>
+        <ul>
+          <li><strong>No Personal Data Collection:</strong> We do not collect, harvest, sell, or share personal identifying information such as your name, email address, phone number, or physical location.</li>
+          <li><strong>100% On-Device Processing:</strong> All barcode and QR code scanning and image analysis take place entirely on your device hardware using local processing algorithms.</li>
+          <li><strong>Local Database Storage:</strong> Scan history and generated codes are stored locally on your device in an isolated local database. You have full control to clear this history at any time through the app settings.</li>
+        </ul>
+
+        <h2>3. Device Permissions &amp; How They Are Used</h2>
+        <p>To provide core functionalities, the app requests the following system permissions:</p>
+        <ul>
+          <li><strong>Camera Permission (android.permission.CAMERA):</strong> Required solely to capture video streams in real-time to detect and decode QR codes and barcodes. Camera frames are processed instantly in volatile memory and are never saved or uploaded.</li>
+          <li><strong>Storage / Media Images Permission (READ_MEDIA_IMAGES / READ_EXTERNAL_STORAGE):</strong> Used exclusively when you choose to scan a barcode from an existing image in your device gallery, or when you save a custom-generated QR code image to your photo gallery.</li>
+          <li><strong>Vibration Permission (android.permission.VIBRATE):</strong> Used to provide subtle haptic feedback when a code is scanned successfully.</li>
+          <li><strong>Internet Permission (android.permission.INTERNET):</strong> Used solely when you tap an external web link decoded from a QR code, or when you explicitly perform an online product barcode lookup.</li>
+        </ul>
+
+        <h2>4. Third-Party Services</h2>
+        <p>The app does not integrate intrusive third-party tracking or analytics SDKs. When you scan a product barcode and request an online product search, search queries are performed via standard public search endpoints (e.g. OpenFoodFacts or Google Search) only upon your explicit request.</p>
+
+        <h2>5. Children's Privacy (COPPA Compliance)</h2>
+        <p>Our app does not address anyone under the age of 13, nor do we knowingly collect personally identifiable information from children. If you are a parent or guardian and have any questions, please contact us.</p>
+
+        <h2>6. Security of Your Data</h2>
+        <p>Because all scan records and generated codes are stored solely within your device's protected app sandbox, your data remains as secure as your personal mobile device. Uninstalling the application or selecting "Clear All Scan Data" permanently deletes all stored data.</p>
+
+        <h2>7. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated Effective Date.</p>
+
+        <div class="contact-box">
+          <div>
+            <h3>Contact Developer</h3>
+            <p>If you have any questions or suggestions about this Privacy Policy, feel free to contact us:</p>
+          </div>
+          <div>
+            <a href="mailto:support@quickapps.com">support@quickapps.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= ARABIC VERSION ================= -->
+      <div class="lang-ar">
+        <div class="hero-section">
+          <span class="badge-pill">متوافق مع سياسات Google Play</span>
+          <h1>سياسة الخصوصية</h1>
+          <div class="meta-info">
+            <strong>التطبيق:</strong> ماسح الباركود وقارئ QR &bull; 
+            <strong>معرّف الحزمة:</strong> com.Quick.apps.h1 &bull; 
+            <strong>تاريخ السريان:</strong> 1 سبتمبر 2026
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <p>🔒 <strong>الخصوصية أولاً:</strong> يعتمد تطبيقنا على المعالجة المحلية بالكامل على هاتفك دون رفع بث الكاميرا أو الصور أو سجل المسح إلى أي خادم خارجي.</p>
+        </div>
+
+        <h2>1. نظرة عامة</h2>
+        <p>توضح سياسة الخصوصية هذه كيفية تعامل تطبيق <strong>ماسح الباركود وقارئ QR</strong> ("نحن" أو "التطبيق") مع معلومات وبيانات المستخدم عند استخدام التطبيق. نحن ملتزمون التزاماً تاماً بحماية خصوصيتك وضمان الشفافية في استخدام الأذونات.</p>
+
+        <h2>2. جمع البيانات ومعالجتها</h2>
+        <p>يعمل التطبيق بمبدأ المعالجة المحلية بدون خوادم خارجية:</p>
+        <ul>
+          <li><strong>عدم جمع البيانات الشخصية:</strong> نحن لا نجمع أو نبيع أو نشارك أي معلومات شخصية تحدد هويتك مثل اسمك أو بريدك أو رقم هاتفك.</li>
+          <li><strong>معالجة محلية 100% على الجهاز:</strong> تتم قراءة وتحليل كافة رموز QR والباركود محلياً داخل جهازك باستخدام خوارزميات المعالجة الفورية.</li>
+          <li><strong>تخزين محلي آمن:</strong> يتم حفظ سجل المسح والعناصر المفضلة والرموز التي تم إنشاؤها داخل قاعدة بيانات محلية آمنة على جهازك فقط، ولديك التحكم الكامل بحذفها في أي وقت من خلال الإعدادات.</li>
+        </ul>
+
+        <h2>3. أذونات الجهاز ودواعي استخدامها</h2>
+        <p>يطلب التطبيق الأذونات الأساسية التالية فقط لتقديم وظائفه الرئيسية:</p>
+        <ul>
+          <li><strong>إذن الكاميرا (CAMERA):</strong> يُستخدم حصرياً لقراءة ومسح رموز QR والباركود في الوقت الفعلي. تتم معالجة إطارات الكاميرا في الذاكرة المؤقتة ولا يتم حفظها أو تصديرها.</li>
+          <li><strong>إذن الصور والوسائط (READ_MEDIA_IMAGES / STORAGE):</strong> يُستخدم فقط إذا اخترت مسح رمز من صورة محفوظة في معرض هاتفك، أو عند حفظ بطاقة QR التي قمت بتصميمها في المعرض.</li>
+          <li><strong>إذن الاهتزاز (VIBRATE):</strong> لتقديم استجابة اهتزاز خفيفة عند قراءة الرمز بنجاح.</li>
+          <li><strong>إذن الإنترنت (INTERNET):</strong> يُستخدم فقط عند فتح الروابط في المتصفح الخارجي أو عند البحث عن تفاصيل المنتج عبر الإنترنت بطلب مباشر منك.</li>
+        </ul>
+
+        <h2>4. خدمات الطرف الثالث</h2>
+        <p>لا يحتوي التطبيق على أي مكتبات تتبع أو إعلانات تطفلية تجمع بياناتك. عمليات البحث عن المنتجات تتم عبر قواعد بيانات عامة فقط عند ضغطك على زر البحث.</p>
+
+        <h2>5. خصوصية الأطفال</h2>
+        <p>تطبيقنا مناسب للجميع ولا يقوم بجمع أي معلومات شخصية من أي مستخدم أو طفل.</p>
+
+        <h2>6. أمان البيانات</h2>
+        <p>نظراً لأن جميع بياناتك وسجلاتك مخزنة محلياً في مساحة التطبيق المعزولة في هاتفك، فإن بياناتك تتمتع بأعلى درجات الأمان. يمكنك مسح جميع البيانات نهائياً في أي وقت عبر زر "مسح جميع بيانات المسح" في الإعدادات.</p>
+
+        <h2>7. التعديلات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية عند الحاجة. سيتم نشر أي تغييرات في هذه الصفحة مع تحديث تاريخ السريان.</p>
+
+        <div class="contact-box">
+          <div>
+            <h3>تواصل مع المطور</h3>
+            <p>إذا كانت لديك أي استفسارات أو أسئلة حول سياسة الخصوصية، يسعدنا تواصلك معنا:</p>
+          </div>
+          <div>
+            <a href="mailto:support@quickapps.com">support@quickapps.com</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Barcode Scanner &amp; QR Reader (com.Quick.apps.h1). All rights reserved.
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      const body = document.body;
+      const btnText = document.getElementById('langBtnText');
+      const isRtl = body.classList.toggle('rtl');
+      
+      if (isRtl) {
+        body.setAttribute('dir', 'rtl');
+        btnText.textContent = 'English (الإنجليزية)';
+      } else {
+        body.setAttribute('dir', 'ltr');
+        btnText.textContent = 'العربية (Arabic)';
+      }
+    }
+
+    // Auto-detect browser language
+    window.addEventListener('DOMContentLoaded', () => {
+      const userLang = navigator.language || navigator.userLanguage;
+      if (userLang.startsWith('ar')) {
+        document.body.classList.add('rtl');
+        document.body.setAttribute('dir', 'rtl');
+        document.getElementById('langBtnText').textContent = 'English (الإنجليزية)';
+      }
+    });
+  </script>
+</body>
+</html>
