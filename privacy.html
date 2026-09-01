@@ -312,7 +312,7 @@
   <main>
     <div class="policy-card">
 
-      <!-- ================= ENGLISH VERSION ================= -->
+      <!-- ================= ENGLISH VERSION (DEFAULT) ================= -->
       <div class="lang-en">
         <div class="hero-section">
           <span class="badge-pill">Google Play Privacy Compliance</span>
@@ -366,7 +366,7 @@
             <p>If you have any questions or suggestions about this Privacy Policy, feel free to contact us:</p>
           </div>
           <div>
-            <a href="mailto:support@quickapps.com">support@quickapps.com</a>
+            <a href="mailto:hussam7180@gmail.com">hussam7180@gmail.com</a>
           </div>
         </div>
       </div>
@@ -425,7 +425,7 @@
             <p>إذا كانت لديك أي استفسارات أو أسئلة حول سياسة الخصوصية، يسعدنا تواصلك معنا:</p>
           </div>
           <div>
-            <a href="mailto:support@quickapps.com">support@quickapps.com</a>
+            <a href="mailto:hussam7180@gmail.com">hussam7180@gmail.com</a>
           </div>
         </div>
       </div>
@@ -451,16 +451,6 @@
         btnText.textContent = 'العربية (Arabic)';
       }
     }
-
-    // Auto-detect browser language
-    window.addEventListener('DOMContentLoaded', () => {
-      const userLang = navigator.language || navigator.userLanguage;
-      if (userLang.startsWith('ar')) {
-        document.body.classList.add('rtl');
-        document.body.setAttribute('dir', 'rtl');
-        document.getElementById('langBtnText').textContent = 'English (الإنجليزية)';
-      }
-    });
   </script>
 </body>
 </html>
