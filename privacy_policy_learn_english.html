@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية | Privacy Policy - تعلم الانجليزية وجميع اللغات</title>
+  <meta name="description" content="سياسة الخصوصية لتطبيق تعلم الانجليزية وجميع اللغات (com.english.save.words) - Privacy Policy for Learn English & All Languages app">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a73e8;
+      --primary-dark: #1557b0;
+      --primary-light: #e8f0fe;
+      --accent: #0d9488;
+      --accent-light: #ccfbf1;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --warning: #d97706;
+      --warning-bg: #fef3c7;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Cairo', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+      padding: 0;
+      margin: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    body[dir="ltr"] {
+      font-family: 'Inter', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand .app-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #1a73e8, #0d9488);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(26, 115, 232, 0.3);
+    }
+
+    .nav-brand .titles {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand .main-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .nav-brand .sub-title {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: monospace;
+    }
+
+    .lang-switcher {
+      display: flex;
+      background: #e2e8f0;
+      padding: 3px;
+      border-radius: 30px;
+      gap: 2px;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+
+    .lang-btn.active {
+      background: #ffffff;
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Container */
+    .container {
+      max-width: 920px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    /* Identity Card (Google Play Compliance Badge) */
+    .identity-card {
+      background: #ffffff;
+      border-radius: var(--radius);
+      border: 1px solid #bfdbfe;
+      background: linear-gradient(to bottom right, #ffffff, #eff6ff);
+      padding: 28px;
+      margin-bottom: 28px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .identity-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #1a73e8, #0d9488);
+    }
+
+    .badge-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .badge-icon {
+      background: var(--primary-light);
+      color: var(--primary);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .badge-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #1e3a8a;
+    }
+
+    .identity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 14px;
+    }
+
+    .id-item {
+      background: #ffffff;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .id-item .label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .id-item .val {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text);
+      word-break: break-all;
+    }
+
+    .id-item .val.highlight {
+      color: var(--primary);
+    }
+
+    .id-item .val.code {
+      font-family: monospace;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+
+    /* Policy Content */
+    .policy-box {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      padding: 36px 40px;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-top: 32px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title:first-of-type {
+      margin-top: 10px;
+    }
+
+    .section-title .sec-num {
+      background: var(--primary-light);
+      color: var(--primary);
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin-right: 24px;
+      margin-bottom: 16px;
+    }
+
+    body[dir="ltr"] ul, body[dir="ltr"] ol {
+      margin-right: 0;
+      margin-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
+    li strong {
+      color: #0f172a;
+    }
+
+    /* Callout Note */
+    .callout {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-inline-start: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 0.95rem;
+    }
+
+    .callout.success {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      border-inline-start-color: var(--success);
+      color: #14532d;
+    }
+
+    .callout.warning {
+      background: #fffbeb;
+      border-color: #fde68a;
+      border-inline-start-color: var(--warning);
+      color: #78350f;
+    }
+
+    /* Table */
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: start;
+      font-size: 0.92rem;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #334155;
+      font-weight: 700;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: #475569;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: linear-gradient(135deg, #f0fdfa, #f8fafc);
+      border: 1px solid #99f6e4;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    .contact-card h4 {
+      color: #0f766e;
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+
+    .contact-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-all;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      background: #ffffff;
+    }
+
+    /* Print Styles */
+    @media print {
+      .navbar, .lang-switcher {
+        display: none !important;
+      }
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+      .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .policy-box {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .policy-box {
+        padding: 24px 18px;
+      }
+      .navbar {
+        padding: 10px 14px;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .identity-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="app-icon">📚</div>
+      <div class="titles">
+        <span class="main-title" id="nav-app-name">تعلم الانجليزية وجميع اللغات</span>
+        <span class="sub-title">com.english.save.words</span>
+      </div>
+    </div>
+    <div class="lang-switcher">
+      <button type="button" class="lang-btn active" id="btn-ar" onclick="switchLanguage('ar')">العربية</button>
+      <button type="button" class="lang-btn" id="btn-en" onclick="switchLanguage('en')">English</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Play Console Identity & Verification Header (Resolves Play Console Mismatch Issue) -->
+    <section class="identity-card" aria-label="App and Developer Verification">
+      <div class="badge-header">
+        <div class="badge-icon">✓</div>
+        <div class="badge-title" id="id-card-title">بيانات التطبيق والمطور المعتمدة على Google Play</div>
+      </div>
+      <p id="id-card-desc" style="font-size: 0.92rem; color: #475569; margin-bottom: 12px;">
+        تتوافق هذه السياسة بشكل تام مع بطاقة بيانات التطبيق الرسمية في متجر Google Play ومتطلبات سياسة بيانات المستخدمين (User Data Policy).
+      </p>
+      
+      <div class="identity-grid">
+        <div class="id-item">
+          <div class="label" id="lbl-app-name">اسم التطبيق (App Name)</div>
+          <div class="val highlight" id="val-app-name">تعلم الانجليزية وجميع اللغات</div>
+          <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">(Learn English and All Languages)</div>
+        </div>
+
+        <div class="id-item">
+          <div class="label" id="lbl-pkg-name">اسم الحزمة (Package Name)</div>
+          <div class="val code">com.english.save.words</div>
+        </div>
+
+        <div class="id-item">
+          <div class="label" id="lbl-dev-name">المطور / الكيان القانوني (Developer)</div>
+          <div class="val highlight" id="val-dev-name">[اسم المطور كما هو في Google Play Console]</div>
+        </div>
+
+        <div class="id-item">
+          <div class="label" id="lbl-contact-email">بريد التواصل للدعم (Contact Email)</div>
+          <div class="val" id="val-contact-email">
+            <a href="mailto:support@example.com" class="contact-link" id="email-link">support@example.com</a>
+          </div>
+        </div>
+
+        <div class="id-item">
+          <div class="label" id="lbl-updated-date">تاريخ آخر تحديث (Effective Date)</div>
+          <div class="val" id="val-updated-date">28 سبتمبر 2026 (September 28, 2026)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARABIC CONTENT -->
+    <article class="policy-box" id="content-ar">
+      <h1 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">سياسة الخصوصية</h1>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        تاريخ السريان: 28 سبتمبر 2026 | آخر تحديث: 28 سبتمبر 2026
+      </p>
+
+      <div class="callout success">
+        <strong>خلاصة سريعة:</strong> نحن نحترم خصوصيتك احتراماً تاماً. مفرداتك وكلماتك وجملك المحفوظة ونتائج اختباراتك يتم تخزينها <strong>محلياً فقط على جهازك</strong>. لا نقوم ببيع أو مشاركة بياناتك الشخصية مع أي طرف ثالث لأغراض تجارية.
+      </div>
+
+      <!-- 1. المقدمة -->
+      <h2 class="section-title"><span class="sec-num">1</span> المقدمة ونطاق السياسة</h2>
+      <p>
+        مرحباً بك في تطبيق <strong>"تعلم الانجليزية وجميع اللغات" (Learn English and All Languages)</strong>، ذو المعرّف البرمجي <code>com.english.save.words</code>، والمشار إليه فيما بعد بـ ("التطبيق" أو "نحن").
+      </p>
+      <p>
+        توضح هذه السياسة كيفية تعاملنا مع البيانات عند استخدامك للتطبيق، وأنواع المعلومات التي قد يتم الوصول إليها، والأذونات المطلوبة لتشغيل وظائف التطبيق، وكيفية حماية بياناتك وفقاً لسياسات Google Play Developer وسياسات بيانات المستخدمين العالمية (مثل GDPR و CCPA).
+      </p>
+
+      <!-- 2. هوية المطور والتطبيق -->
+      <h2 class="section-title"><span class="sec-num">2</span> معلومات التطبيق والمطور المعتمدة</h2>
+      <p>
+        لضمان الشفافية والمطابقة التامة مع بطاقة بيانات التطبيق في متجر Google Play:
+      </p>
+      <ul>
+        <li><strong>اسم التطبيق الرسمي:</strong> تعلم الانجليزية وجميع اللغات (Learn English and All Languages)</li>
+        <li><strong>معرف الحزمة (Package ID):</strong> <code>com.english.save.words</code></li>
+        <li><strong>اسم جهة التطوير / المطور:</strong> مسجل رسمياً في حساب Google Play Console باسم المطور المعتمد.</li>
+        <li><strong>وسيلة التواصل الرسمية:</strong> البريد الإلكتروني المذكور أسفل هذه الوثيقة وفي صفحة التطبيق على Google Play.</li>
+      </ul>
+
+      <!-- 3. البيانات التي يتم جمعها -->
+      <h2 class="section-title"><span class="sec-num">3</span> البيانات التي نجمعها وكيفية معالجتها</h2>
+      <p>
+        ينقسم التعامل مع البيانات في التطبيق إلى نوعين:
+      </p>
+      <ol>
+        <li>
+          <strong>البيانات المدخلة من قبل المستخدم (تخزين محلي 100%):</strong>
+          <br>
+          جميع المفردات، الكلمات، الجمل، الملاحظات، مستويات الحفظ، نقاط الخبرة (XP)، وسجلات التقدم في الألعاب والقصص يتم حفظها في قاعدة بيانات محلية آمنة (SQLite) ومخزن الإعدادات (SharedPreferences) <strong>على ذاكرة هاتفك فقط</strong>. نحن لا نرفع هذه البيانات إلى أي خوادم سحابية خاصة بنا، ولا يمكن لأي طرف خارجي الاطلاع عليها.
+        </li>
+        <li>
+          <strong>المعلومات التقنية التشغيلية (الجمع التلقائي غير المباشر):</strong>
+          <br>
+          قد تقوم حزم تطوير البرمجيات التابعة لخدمات Google (الموضحة أدناه) بجمع بيانات تقنية تشخيصية ومجهولة الهوية مثل نوع الجهاز، إصدار نظام التشغيل Android، تقارير الأعطال (Crash Logs)، ومعرف الإعلانات (Advertising ID) لتحسين استقرار التطبيق وعرض الإعلانات المناسبة.
+        </li>
+      </ol>
+
+      <!-- 4. الأذونات والصلاحيات -->
+      <h2 class="section-title"><span class="sec-num">4</span> أذونات التطبيق وأسباب طلبها</h2>
+      <p>
+        يطلب التطبيق فقط الأذونات الضرورية لتقديم ميزاته التعليمية للمستخدم:
+      </p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>الإذن (Permission)</th>
+              <th>الغرض والاستخدام</th>
+              <th>هل يتم تخزين البيانات خارجياً؟</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>الكاميرا والوسائط (Camera)</strong></td>
+              <td>تُستخدم لميزة المترجم الفوري بالصور وقراءة النصوص (OCR) لاستخراج الكلمات من الكتب واللافتات وترجمتها.</td>
+              <td><strong>لا</strong>، تتم معالجة الصور فورياً ولا يتم تخزين الصور أو مشاركتها.</td>
+            </tr>
+            <tr>
+              <td><strong>التسجيل الصوتي (RECORD_AUDIO)</strong></td>
+              <td>يُستخدم لميزة النطق التفاعلي، التدرب على اللفظ، والتعرف الصوتي على الكلمات مع معلم الذكاء الاصطناعي.</td>
+              <td><strong>لا</strong>، تتم معالجة الصوت لحظياً للتعرف على اللفظ فقط دون حفظ أو تسجيل المحادثات الصوتية.</td>
+            </tr>
+            <tr>
+              <td><strong>التخزين (Storage / Read & Write)</strong></td>
+              <td>يُطلب لتمكين المستخدم من تصدير تقارير الكلمات بصيغة PDF أو Excel أو استيراد قوائم الكلمات الخاصة به.</td>
+              <td><strong>لا</strong>، يتم الحفظ محلياً بناءً على أمر مباشر من المستخدم.</td>
+            </tr>
+            <tr>
+              <td><strong>الاتصال بالإنترنت (INTERNET)</strong></td>
+              <td>للاتصال بمحرك الذكاء الاصطناعي (AI Tutor)، جلب الترجمات، تحميل أصوات النطق عند الحاجة، وعرض الإعلانات.</td>
+              <td>تُنقل الاستفسارات عبر بروتوكول HTTPS المشفر فقط.</td>
+            </tr>
+            <tr>
+              <td><strong>البلوتوث (BLUETOOTH / CONNECT)</strong></td>
+              <td>لتوجيه النطق الصوتي عالي الجودة إلى السماعات الخارجية أو سماعات الرأس اللاسلكية.</td>
+              <td><strong>لا</strong>، لا يتم جمع أي معلومات تخص أجهزة البلوتوث.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 5. خدمات الطرف الثالث -->
+      <h2 class="section-title"><span class="sec-num">5</span> خدمات وأطراف ثالثة (Third-Party SDKs)</h2>
+      <p>
+        يستخدم التطبيق خدمات شريكة موثوقة تلتزم بمعايير أمان البيانات العالمية:
+      </p>
+      <ul>
+        <li>
+          <strong>Google AdMob:</strong> تُستخدم لعرض الإعلانات المدمجة في التطبيق. قد تقوم AdMob بجمع واستخدام معرف إعلانات Google المجهول (GAID) وملفات تعريف الارتباط لتقديم إعلانات ملائمة. لمزيد من المعلومات، راجع <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">سياسة إعلانات Google</a>.
+        </li>
+        <li>
+          <strong>Google Play Services:</strong> لضمان عمل واجهات برمجة التطبيقات الأساسية ومزامنة خدمات المتجر وتقارير الأداء.
+        </li>
+        <li>
+          <strong>خدمات الذكاء الاصطناعي والترجمة:</strong> عند استخدام المحادثة مع المعلم الذكي أو الترجمة المباشرة، تُرسل نصوص الاستفسار مشفرة عبر اتصال آمن (TLS/HTTPS) لإنشاء الردود ولا يتم ربطها بهوية المستخدم الشخصية.
+        </li>
+      </ul>
+
+      <!-- 6. أمان البيانات والتشفير -->
+      <h2 class="section-title"><span class="sec-num">6</span> أمان البيانات وتشفيرها</h2>
+      <p>
+        نحن ملتزمون بحماية بياناتك:
+      </p>
+      <ul>
+        <li><strong>التشفير أثناء النقل:</strong> جميع الاتصالات الشبكية بين التطبيق ومزودي الخدمات البرمجية (مثل الترجمة والذكاء الاصطناعي) تتم عبر بروتوكولات التشفير الحديثة (HTTPS / TLS 1.3).</li>
+        <li><strong>العزل المحلي:</strong> تُحفظ بياناتك داخل بيئة التطبيق المعزولة (Sandboxed storage) بنظام أندرويد، ولا يمكن لتطبيقات أخرى الوصول إليها.</li>
+      </ul>
+
+      <!-- 7. حذف البيانات وحقوق المستخدم -->
+      <h2 class="section-title"><span class="sec-num">7</span> حقوق المستخدم وحذف البيانات</h2>
+      <p>
+        أنت المالك الوحيد لبياناتك ولك كامل السيطرة عليها:
+      </p>
+      <ul>
+        <li><strong>حذف المفردات والسجلات:</strong> يمكنك حذف أي كلمة أو جملة أو اختبار في أي وقت مباشرة من خلال واجهة التطبيق.</li>
+        <li><strong>مسح البيانات الشامل:</strong> يمكنك مسح كافة بيانات التطبيق وسجلاته بضغطة زر من خلال التوجه إلى إعدادات الهاتف &gt; التطبيقات &gt; "تعلم الانجليزية وجميع اللغات" &gt; التخزين &gt; مسح البيانات (Clear Data).</li>
+        <li><strong>إلغاء التثبيت:</strong> يؤدي إلغاء تثبيت التطبيق من جهازك إلى الحذف الفوري والنهائي لجميع البيانات المحلية وقواعد البيانات المرتبطة بالتطبيق.</li>
+      </ul>
+
+      <!-- 8. خصوصية الأطفال -->
+      <h2 class="section-title"><span class="sec-num">8</span> خصوصية الأطفال (COPPA Compliance)</h2>
+      <p>
+        التطبيق موجه لجميع الفئات العمرية لتعلم اللغات، ولا يقوم التطبيق بجمع أي معلومات تعريف شخصية (PII) من الأطفال دون سن 13 عاماً عن قصد. وإذا تبين لنا أن طفلاً قد قدم بيانات شخصية، يتم حذفها فوراً.
+      </p>
+
+      <!-- 9. التعديلات على السياسة -->
+      <h2 class="section-title"><span class="sec-num">9</span> التعديلات على سياسة الخصوصية</h2>
+      <p>
+        قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لمواكبة التحديثات البرمجية أو المتطلبات التنظيمية. سيتم نشر أي تحديث في هذه الصفحة مع تحديث "تاريخ آخر تحديث" في أعلى الوثيقة.
+      </p>
+
+
+    </article>
+
+    <!-- ENGLISH CONTENT -->
+    <article class="policy-box" id="content-en" style="display: none;">
+      <h1 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">Privacy Policy</h1>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        Effective Date: September 28, 2026 | Last Updated: September 28, 2026
+      </p>
+
+      <div class="callout success">
+        <strong>Quick Summary:</strong> We deeply respect your privacy. All your saved vocabulary, sentences, custom notes, and test scores are stored <strong>strictly locally on your device</strong>. We do not sell, rent, or transfer your personal data to any external parties for marketing or commercial purposes.
+      </div>
+
+      <!-- 1. Introduction -->
+      <h2 class="section-title"><span class="sec-num">1</span> Introduction & Scope</h2>
+      <p>
+        Welcome to <strong>"Learn English and All Languages" (تعلم الانجليزية وجميع اللغات)</strong>, with Application ID <code>com.english.save.words</code> (referred to as "the App", "we", "us", or "our").
+      </p>
+      <p>
+        This Privacy Policy explains how we handle your information when you use our mobile application, the permissions we request, and how your data is protected in full compliance with the Google Play Developer Program Policies, Google User Data Policies, and international privacy laws (including GDPR and CCPA).
+      </p>
+
+      <!-- 2. Developer & App Identification -->
+      <h2 class="section-title"><span class="sec-num">2</span> App & Developer Verification (Google Play Matching)</h2>
+      <p>
+        To ensure complete clarity and exact matching with our official Google Play Store listing:
+      </p>
+      <ul>
+        <li><strong>Application Title:</strong> تعلم الانجليزية وجميع اللغات (Learn English and All Languages)</li>
+        <li><strong>Application Package Name / ID:</strong> <code>com.english.save.words</code></li>
+        <li><strong>Developer / Legal Entity Name:</strong> Registered under our verified Google Play Console developer account.</li>
+        <li><strong>Official Contact:</strong> Via the verified developer contact email stated in this policy and on our Google Play Store page.</li>
+      </ul>
+
+      <!-- 3. Data Collection -->
+      <h2 class="section-title"><span class="sec-num">3</span> Information We Collect and Process</h2>
+      <p>
+        We practice strict data minimization. The data associated with the App is categorized as follows:
+      </p>
+      <ol>
+        <li>
+          <strong>User-Generated Learning Data (100% Local Storage):</strong>
+          <br>
+          Any vocabulary words, translated phrases, custom sentences, learning notes, spaced repetition progress, experience points (XP), and quiz answers you record are stored exclusively inside your device's private SQLite database and SharedPreferences storage. This data is never transmitted to our servers or any cloud database.
+        </li>
+        <li>
+          <strong>Technical and Diagnostic Information (Automated Third-Party Collection):</strong>
+          <br>
+          Third-party SDKs provided by Google (detailed below) may automatically collect pseudonymous technical data such as device model, OS version, crash logs, and Google Advertising ID (GAID) for stability, analytics, and advertising purposes.
+        </li>
+      </ol>
+
+      <!-- 4. Device Permissions -->
+      <h2 class="section-title"><span class="sec-num">4</span> Device Permissions and Purpose</h2>
+      <p>
+        The App requests only the permissions necessary to deliver its core educational features:
+      </p>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Purpose & Usage</th>
+              <th>Stored Externally?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Camera (Camera Access)</strong></td>
+              <td>Used for Optical Character Recognition (OCR) and instant photo translation, allowing users to capture text from books or signs to save as vocabulary.</td>
+              <td><strong>No</strong>. Images are processed immediately on-device and are never stored or uploaded externally.</td>
+            </tr>
+            <tr>
+              <td><strong>Microphone (RECORD_AUDIO)</strong></td>
+              <td>Used for speech recognition and interactive pronunciation practice with the AI Tutor.</td>
+              <td><strong>No</strong>. Audio streams are evaluated in real time for pronunciation accuracy and are never recorded or stored.</td>
+            </tr>
+            <tr>
+              <td><strong>Storage (Read/Write External Storage)</strong></td>
+              <td>Used exclusively when the user manually initiates exporting their vocabulary lists to PDF or Excel reports, or importing word lists.</td>
+              <td><strong>No</strong>. File operations occur locally upon explicit user command.</td>
+            </tr>
+            <tr>
+              <td><strong>Internet Access (INTERNET)</strong></td>
+              <td>Required to communicate with the AI language model for interactive tutoring, fetching online translations, and serving AdMob advertisements.</td>
+              <td>Transmitted strictly over secure, encrypted HTTPS/TLS channels.</td>
+            </tr>
+            <tr>
+              <td><strong>Bluetooth (BLUETOOTH / CONNECT)</strong></td>
+              <td>Used to route clear Text-to-Speech (TTS) audio output to connected wireless earphones or Bluetooth speakers.</td>
+              <td><strong>No</strong>. No Bluetooth device details or telemetry are stored or tracked.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 5. Third-Party Services -->
+      <h2 class="section-title"><span class="sec-num">5</span> Third-Party Services & SDKs</h2>
+      <p>
+        The App integrates trusted third-party service providers that adhere to industry security standards:
+      </p>
+      <ul>
+        <li>
+          <strong>Google AdMob:</strong> Used to display in-app banner, interstitial, and rewarded ads. Google AdMob may process device identifiers and ad interactions in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google's Advertising Privacy Terms</a>.
+        </li>
+        <li>
+          <strong>Google Play Services:</strong> Powers essential platform APIs, billing/in-app subscriptions, and application performance metrics.
+        </li>
+        <li>
+          <strong>AI & Natural Language Processing Services:</strong> Tutoring and translation prompts are transmitted securely via TLS encryption to AI endpoints solely to return learning responses. Prompts are never associated with your personal identity.
+        </li>
+      </ul>
+
+      <!-- 6. Data Security & Encryption -->
+      <h2 class="section-title"><span class="sec-num">6</span> Data Security & Encryption</h2>
+      <p>
+        We implement robust security practices to safeguard your information:
+      </p>
+      <ul>
+        <li><strong>Encryption in Transit:</strong> All network communications (such as AI tutor dialogues and translation queries) are encrypted using industry-standard HTTPS / TLS 1.3 protocols.</li>
+        <li><strong>App Sandboxing:</strong> All personal learning data is held within Android’s secure application sandbox, preventing unauthorized access by other installed applications.</li>
+      </ul>
+
+      <!-- 7. User Data Deletion & Rights -->
+      <h2 class="section-title"><span class="sec-num">7</span> User Rights and Data Deletion</h2>
+      <p>
+        You have complete authority over your data at all times:
+      </p>
+      <ul>
+        <li><strong>In-App Deletion:</strong> You can delete any individual word, sentence, or history entry directly inside the App at any time.</li>
+        <li><strong>Complete Data Erasure:</strong> To clear all data, navigate to your Android device settings: <em>Settings &gt; Apps &gt; Learn English and All Languages &gt; Storage &gt; Clear Data</em>.</li>
+        <li><strong>Uninstalling the App:</strong> Removing the App from your device permanently and irreversibly deletes all local databases, cached files, and preferences.</li>
+      </ul>
+
+      <!-- 8. Children's Privacy -->
+      <h2 class="section-title"><span class="sec-num">8</span> Children’s Privacy (COPPA Compliance)</h2>
+      <p>
+        The App is an educational tool designed for general audiences and language learners. We do not knowingly solicit or collect personally identifiable information from children under the age of 13. If you believe a minor has provided us with personal data, please contact us immediately for prompt deletion.
+      </p>
+
+      <!-- 9. Changes to this Policy -->
+      <h2 class="section-title"><span class="sec-num">9</span> Changes to This Privacy Policy</h2>
+      <p>
+        We may periodically update our Privacy Policy to reflect application improvements or legal requirements. Any modifications will be posted directly on this URL with an updated "Last Updated" date.
+      </p>
+
+
+    </article>
+
+  </main>
+
+  <footer>
+    <p>© 2026 <strong>تعلم الانجليزية وجميع اللغات (Learn English and All Languages)</strong>. All Rights Reserved.</p>
+    <p style="font-size: 0.8rem; margin-top: 4px;">Package ID: com.english.save.words</p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      const btnAr = document.getElementById('btn-ar');
+      const btnEn = document.getElementById('btn-en');
+      const contentAr = document.getElementById('content-ar');
+      const contentEn = document.getElementById('content-en');
+      const navAppName = document.getElementById('nav-app-name');
+      const idCardTitle = document.getElementById('id-card-title');
+      const idCardDesc = document.getElementById('id-card-desc');
+      const lblAppName = document.getElementById('lbl-app-name');
+      const lblPkgName = document.getElementById('lbl-pkg-name');
+      const lblDevName = document.getElementById('lbl-dev-name');
+      const lblContactEmail = document.getElementById('lbl-contact-email');
+      const lblUpdatedDate = document.getElementById('lbl-updated-date');
+
+      if (lang === 'en') {
+        document.documentElement.lang = 'en';
+        document.documentElement.dir = 'ltr';
+        btnAr.classList.remove('active');
+        btnEn.classList.add('active');
+        contentAr.style.display = 'none';
+        contentEn.style.display = 'block';
+
+        navAppName.textContent = 'Learn English and All Languages';
+        idCardTitle.textContent = 'Verified Google Play Application & Developer Details';
+        idCardDesc.textContent = 'This policy matches the official Google Play store listing and complies with all Google Play User Data Policy requirements.';
+        lblAppName.textContent = 'Application Name';
+        lblPkgName.textContent = 'Package Name / App ID';
+        lblDevName.textContent = 'Developer / Legal Entity';
+        lblContactEmail.textContent = 'Official Support Email';
+        lblUpdatedDate.textContent = 'Last Updated';
+      } else {
+        document.documentElement.lang = 'ar';
+        document.documentElement.dir = 'rtl';
+        btnEn.classList.remove('active');
+        btnAr.classList.add('active');
+        contentEn.style.display = 'none';
+        contentAr.style.display = 'block';
+
+        navAppName.textContent = 'تعلم الانجليزية وجميع اللغات';
+        idCardTitle.textContent = 'بيانات التطبيق والمطور المعتمدة على Google Play';
+        idCardDesc.textContent = 'تتوافق هذه السياسة بشكل تام مع بطاقة بيانات التطبيق الرسمية في متجر Google Play ومتطلبات سياسة بيانات المستخدمين (User Data Policy).';
+        lblAppName.textContent = 'اسم التطبيق (App Name)';
+        lblPkgName.textContent = 'اسم الحزمة (Package Name)';
+        lblDevName.textContent = 'المطور / الكيان القانوني (Developer)';
+        lblContactEmail.textContent = 'بريد التواصل للدعم (Contact Email)';
+        lblUpdatedDate.textContent = 'تاريخ آخر تحديث (Effective Date)';
+      }
+    }
+  </script>
+</body>
+</html>
