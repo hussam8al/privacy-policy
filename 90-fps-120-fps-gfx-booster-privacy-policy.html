@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>90 FPS + 120 FPS: GFX Booster — Privacy Policy | سياسة الخصوصية</title>
+  <meta name="description" content="Official Privacy Policy & Google Play Data Safety Disclosure for 90 FPS + 120 FPS: GFX Booster (English & Arabic)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root,
+    [data-theme="dark"] {
+      --bg: #121318;
+      --surface-low: #1A1B20;
+      --surface: #1E1F25;
+      --surface-high: #282A2F;
+      --surface-highest: #33353A;
+      --primary: #B0C6FF;
+      --on-primary: #142F60;
+      --primary-container: #2E4578;
+      --on-primary-container: #D9E2FF;
+      --secondary: #BFC6DC;
+      --secondary-container: #404659;
+      --on-secondary-container: #DCE2F9;
+      --tertiary: #DFBBDE;
+      --tertiary-container: #593D5A;
+      --on-tertiary-container: #FDD7FA;
+      --on-surface: #E2E2E9;
+      --on-surface-variant: #C5C6D0;
+      --outline-variant: rgba(68, 70, 79, 0.65);
+      --status-good: #7FDA94;
+      --status-good-bg: rgba(127, 218, 148, 0.14);
+      --status-warn: #FFB86E;
+      --status-warn-bg: rgba(255, 184, 110, 0.14);
+      --accent-cyan: #00E5FF;
+      --accent-amber: #FFAB40;
+      --shadow: 0 14px 36px rgba(0, 0, 0, 0.35);
+    }
+
+    [data-theme="light"] {
+      --bg: #FAF8FF;
+      --surface-low: #F4F3FA;
+      --surface: #EEEDF4;
+      --surface-high: #E8E7EF;
+      --surface-highest: #E2E2E9;
+      --primary: #465D91;
+      --on-primary: #FFFFFF;
+      --primary-container: #D9E2FF;
+      --on-primary-container: #2E4578;
+      --secondary: #575E71;
+      --secondary-container: #DCE2F9;
+      --on-secondary-container: #404659;
+      --tertiary: #725572;
+      --tertiary-container: #FDD7FA;
+      --on-tertiary-container: #593D5A;
+      --on-surface: #1A1B20;
+      --on-surface-variant: #44464F;
+      --outline-variant: rgba(197, 198, 208, 0.75);
+      --status-good: #1B6D35;
+      --status-good-bg: rgba(27, 109, 53, 0.12);
+      --status-warn: #8A5100;
+      --status-warn-bg: rgba(138, 81, 0, 0.12);
+      --accent-cyan: #008BA3;
+      --accent-amber: #E65100;
+      --shadow: 0 10px 28px rgba(46, 69, 120, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--on-surface);
+      font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      padding-bottom: 64px;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .en-block {
+      direction: ltr;
+      text-align: left;
+      font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, sans-serif;
+    }
+
+    .ar-block {
+      direction: rtl;
+      text-align: right;
+      font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    /* Top App Bar matching NavigationAndScaffold.kt */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: color-mix(in srgb, var(--bg) 86%, transparent);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--outline-variant);
+    }
+
+    .top-bar-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-icon-svg {
+      width: 44px;
+      height: 44px;
+      border-radius: 13px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    }
+
+    .brand-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--on-surface);
+      line-height: 1.25;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    /* Segmented Option Bar matching StudioComponents.kt SegmentedOptionBar */
+    .controls-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .segmented-bar {
+      display: inline-flex;
+      background: var(--surface-highest);
+      padding: 4px;
+      border-radius: 999px;
+      gap: 4px;
+    }
+
+    .seg-btn {
+      border: none;
+      background: transparent;
+      color: var(--on-surface-variant);
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .seg-btn.active {
+      background: var(--primary);
+      color: var(--on-primary);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 22px 18px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Featured Hero Card matching FpsHubScreen primaryContainer hero */
+    .hero-card {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge-group {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hero-icon-box {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      background: var(--primary);
+      color: var(--on-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .pill-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .pill-good {
+      background: var(--status-good-bg);
+      color: var(--status-good);
+      border: 1px solid color-mix(in srgb, var(--status-good) 35%, transparent);
+    }
+
+    .pill-primary {
+      background: var(--primary);
+      color: var(--on-primary);
+    }
+
+    /* 3 Metric Tiles Strip matching DeviceStatusStripCard in FpsHubScreen */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .metric-tile {
+      background: var(--surface);
+      border-radius: 24px;
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border: 1px solid var(--outline-variant);
+    }
+
+    .tile-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .tile-icon.good {
+      background: var(--status-good-bg);
+      color: var(--status-good);
+    }
+
+    .tile-icon.primary {
+      background: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    .tile-icon.secondary {
+      background: var(--secondary-container);
+      color: var(--on-secondary-container);
+    }
+
+    .tile-icon.tertiary {
+      background: var(--tertiary-container);
+      color: var(--on-tertiary-container);
+    }
+
+    /* StudioCard matching StudioComponents.kt (28dp rounded) */
+    .studio-card {
+      background: var(--surface);
+      border-radius: 28px;
+      padding: 22px;
+      border: 1px solid var(--outline-variant);
+    }
+
+    /* Expressive Group Cards matching ExpressiveGroupPos (TOP, MIDDLE, BOTTOM) */
+    .expressive-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .expressive-item {
+      background: var(--surface);
+      padding: 20px 22px;
+      border: 1px solid var(--outline-variant);
+    }
+
+    .expressive-item.top {
+      border-radius: 26px 26px 6px 6px;
+    }
+
+    .expressive-item.middle {
+      border-radius: 6px;
+    }
+
+    .expressive-item.bottom {
+      border-radius: 6px 6px 26px 26px;
+    }
+
+    /* Bilingual Dual-Column Grid inside each card */
+    .bilingual-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    body[data-lang="ar"] .en-col {
+      display: none;
+    }
+
+    body[data-lang="en"] .ar-col {
+      display: none;
+    }
+
+    body[data-lang="ar"] .bilingual-grid,
+    body[data-lang="en"] .bilingual-grid {
+      grid-template-columns: 1fr;
+    }
+
+    @media (max-width: 820px) {
+      .bilingual-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 1.12rem;
+      font-weight: 800;
+      color: var(--on-surface);
+    }
+
+    .section-subtitle {
+      font-size: 0.83rem;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--on-surface-variant);
+      font-size: 0.94rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 6px;
+    }
+
+    li {
+      color: var(--on-surface-variant);
+      font-size: 0.92rem;
+      position: relative;
+      padding-inline-start: 18px;
+    }
+
+    li::before {
+      content: "•";
+      color: var(--primary);
+      font-weight: 800;
+      position: absolute;
+      inset-inline-start: 2px;
+    }
+
+    code {
+      background: var(--surface-high);
+      color: var(--primary);
+      padding: 2px 7px;
+      border-radius: 7px;
+      font-size: 0.83rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      direction: ltr;
+      display: inline-block;
+    }
+
+    .perm-badge {
+      display: inline-block;
+      background: var(--surface-high);
+      color: var(--primary);
+      border: 1px solid var(--outline-variant);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 6px;
+      direction: ltr;
+    }
+
+    .divider {
+      height: 1px;
+      background: var(--outline-variant);
+      margin: 14px 0;
+    }
+
+    .footer {
+      text-align: center;
+      color: var(--on-surface-variant);
+      font-size: 0.84rem;
+      margin-top: 12px;
+      padding: 16px;
+    }
+  </style>
+</head>
+<body data-lang="both">
+
+  <!-- Sticky TopAppBar -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <div class="brand-row">
+        <!-- Exact 165 FPS App Icon SVG -->
+        <svg class="app-icon-svg" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-label="165 FPS Icon">
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#090D16" />
+              <stop offset="60%" stop-color="#0F1A2E" />
+              <stop offset="100%" stop-color="#132642" />
+            </linearGradient>
+          </defs>
+          <rect width="108" height="108" rx="22" fill="url(#bgGrad)" />
+          <polygon points="54,14 94,54 54,94 14,54" fill="#00E5FF" fill-opacity="0.11" />
+          <path d="M27,39 L27,27 L39,27 M69,27 L81,27 L81,39 M81,69 L81,81 L69,81 M39,81 L27,81 L27,69"
+                fill="none" stroke="#00E5FF" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round" />
+          <polygon points="56.2,22 45.2,37.8 52.8,37.8 50.6,49.8 61.8,33.6 54.4,33.6" fill="#FFAB40" />
+          <text x="54" y="67" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="22">165</text>
+          <text x="54" y="79" text-anchor="middle" fill="#00E5FF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="10.5">FPS</text>
+        </svg>
+        <div>
+          <div class="brand-title">90 FPS + 120 FPS: GFX Booster</div>
+          <div class="brand-sub">Privacy Policy &amp; Google Play Data Safety • سياسة الخصوصية وأمان البيانات</div>
+        </div>
+      </div>
+
+      <div class="controls-wrap">
+        <div class="segmented-bar" role="group" aria-label="Language Switcher">
+          <button type="button" class="seg-btn active" onclick="setLang('both', this)">عربي + EN</button>
+          <button type="button" class="seg-btn" onclick="setLang('ar', this)">العربية</button>
+          <button type="button" class="seg-btn" onclick="setLang('en', this)">English</button>
+        </div>
+        <div class="segmented-bar" role="group" aria-label="Theme Switcher">
+          <button type="button" class="seg-btn active" onclick="setTheme('dark', this)">داكن • Dark</button>
+          <button type="button" class="seg-btn" onclick="setTheme('light', this)">فاتح • Light</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 1. Featured Hero Overview Card -->
+    <section class="hero-card">
+      <div class="hero-top">
+        <div class="hero-badge-group">
+          <div class="hero-icon-box">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              <path d="M9 12l2 2 4-4" />
+            </svg>
+          </div>
+          <div>
+            <h1 style="font-size: 1.35rem; font-weight: 800; line-height: 1.3;">
+              سياسة الخصوصية الرسمية • Official Privacy Policy
+            </h1>
+            <div style="font-size: 0.86rem; opacity: 0.9;">
+              Effective Date / تاريخ السريان: 2026-11-18 &nbsp;•&nbsp; Package ID: <code>com.english.save.words</code>
+            </div>
+          </div>
+        </div>
+        <span class="pill-chip pill-primary">100% On-Device • معالجة محلية بالكامل</span>
+      </div>
+
+      <div class="bilingual-grid">
+        <div class="ar-col ar-block">
+          <p style="color: var(--on-primary-container); margin-bottom: 0;">
+            يعمل تطبيق <strong>90 FPS + 120 FPS: GFX Booster</strong> محلياً بنسبة <strong>100% على جهازك</strong>. لا نقوم بجمع أو تخزين أو بيع أو مشاركة أي بيانات شخصية أو معرّفات أجهزة أو بيانات تصفح مع أي خوادم خارجية أو أطراف ثالثة.
+          </p>
+        </div>
+        <div class="en-col en-block">
+          <p style="color: var(--on-primary-container); margin-bottom: 0;">
+            <strong>90 FPS + 120 FPS: GFX Booster</strong> operates <strong>100% locally on your device</strong>. We do not collect, store, transmit, sell, or share any personal data, device identifiers, or user traffic with any remote servers or third parties.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Quick Data Safety Summary Strip (Matching FpsHubScreen Status Metric Tiles) -->
+    <section class="metrics-grid" aria-label="Google Play Data Safety Summary">
+      <div class="metric-tile">
+        <div class="tile-icon good">0%</div>
+        <div>
+          <div style="font-weight: 800; font-size: 0.96rem;">لا يتم جمع أي بيانات • Zero Data Collected</div>
+          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">No PII, contacts, location, or media collected</div>
+        </div>
+      </div>
+      <div class="metric-tile">
+        <div class="tile-icon primary">LOCAL</div>
+        <div>
+          <div style="font-weight: 800; font-size: 0.96rem;">بدون خوادم خارجية • No Remote Servers</div>
+          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">Room SQLite &amp; Jetpack DataStore on-device only</div>
+        </div>
+      </div>
+      <div class="metric-tile">
+        <div class="tile-icon tertiary">NO SDK</div>
+        <div>
+          <div style="font-weight: 800; font-size: 0.96rem;">بدون إعلانات أو تتبع • Zero Ads or Trackers</div>
+          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">No third-party analytics or advertising SDKs</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Expressive Group: Core Privacy & Data Safety Sections -->
+    <div class="expressive-group">
+
+      <!-- Section 1: Information Collection & Use -->
+      <article class="expressive-item top">
+        <div class="bilingual-grid">
+          <div class="ar-col ar-block">
+            <div class="section-header">
+              <div class="tile-icon primary">1</div>
+              <div>
+                <h2 class="section-title">جمع المعلومات واستخدامها (Data Safety)</h2>
+                <div class="section-subtitle">إفصاح قسم أمان البيانات في Google Play</div>
+              </div>
+            </div>
+            <p>تم تصميم التطبيق كأداة تقنية محلية لضبط إعدادات الإطارات، الرسوميات، والتدريب على التصويب دون الحاجة لإنشاء حساب أو الاتصال بأي سحابة:</p>
+            <ul>
+              <li><strong>المعلومات الشخصية:</strong> لا يطلب التطبيق ولا يجمع الاسم أو البريد الإلكتروني أو رقم الهاتف أو الموقع الجغرافي أو جهات الاتصال.</li>
+              <li><strong>معرّفات الجهاز والتتبع:</strong> لا يجمع التطبيق معرّف الإعلانات (Advertising ID) أو عنوان IP أو بصمة الجهاز ولا يحتوي على أي حزم SDK إعلانية أو تحليلية.</li>
+              <li><strong>التخزين المحلي فقط:</strong> تُحفظ تفضيلات اللغة والسمة، ملفات GFX المحفوظة، النسخ الاحتياطية التلقائية، ونتائج مدرب رد الفعل محلياً داخل مساحة التطبيق الخاصة (<code>DataStore</code> وقاعدة بيانات <code>Room</code>) على جهازك فقط.</li>
+            </ul>
+          </div>
+
+          <div class="en-col en-block">
+            <div class="section-header">
+              <div class="tile-icon primary">1</div>
+              <div>
+                <h2 class="section-title">Information Collection &amp; Use (Data Safety)</h2>
+                <div class="section-subtitle">Google Play Data Safety Section Disclosure</div>
+              </div>
+            </div>
+            <p>The Application is engineered as a standalone local utility for frame rate configuration, graphics tuning, and aim training without requiring user accounts or cloud connectivity:</p>
+            <ul>
+              <li><strong>Personal Information:</strong> We do not request, access, or collect your name, email address, phone number, physical location, photos, microphone, camera, or contacts.</li>
+              <li><strong>Device Identifiers &amp; Tracking:</strong> We do not collect Advertising IDs, IP addresses, or device fingerprints, and we do not bundle any third-party analytics or advertising SDKs.</li>
+              <li><strong>Strictly Local Storage:</strong> Language/theme preferences, saved GFX profiles, automatic configuration backups, and Reflex Trainer scores are stored exclusively inside your device's private internal storage (Android Jetpack <code>DataStore</code> and <code>Room</code> SQLite database).</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 2: VpnService Prominent Disclosure (Critical for Google Play Console) -->
+      <article class="expressive-item middle">
+        <div class="bilingual-grid">
+          <div class="ar-col ar-block">
+            <div class="section-header">
+              <div class="tile-icon good">2</div>
+              <div>
+                <h2 class="section-title">إفصاح خدمة الشبكة المحلية (Android VpnService)</h2>
+                <div class="section-subtitle">متوافق مع سياسة VpnService في Google Play</div>
+              </div>
+            </div>
+            <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
+            <p>يتضمن التطبيق ميزة اختيارية باسم <strong>"تركيز شبكة اللعبة" (Game Network Channel Focus)</strong>، والتي لا تعمل إلا بعد عرض إفصاح واضح داخل التطبيق وموافقة المستخدم الصريحة:</p>
+            <ul>
+              <li><strong>عزل محلي 100% على الجهاز:</strong> تستخدم الميزة واجهة <code>VpnService</code> الرسمية في أندرويد محلياً داخل جهازك فقط لإيقاف استهلاك البيانات في الخلفية من التطبيقات غير المختارة أثناء اللعب، بحيث تستخدم لعبتك اتصال Wi-Fi أو بيانات الهاتف الفعلي مباشرة دون ازدحام.</li>
+              <li><strong>لا يوجد خادم VPN خارجي:</strong> لا يتصل التطبيق بأي خادم VPN عن بُعد، ولا يعيد توجيه حركة مرور الإنترنت خارج جهازك.</li>
+              <li><strong>لا يتم تغيير DNS أو فحص البيانات:</strong> لا يقوم التطبيق بضبط أي خوادم DNS مخصّصة، ولا يقوم بجمع أو قراءة أو فحص أو فك تشفير أو تسجيل أو مشاركة أي حزم شبكة أو سجل تصفح.</li>
+            </ul>
+          </div>
+
+          <div class="en-col en-block">
+            <div class="section-header">
+              <div class="tile-icon good">2</div>
+              <div>
+                <h2 class="section-title">Local Network Isolation Disclosure (Android VpnService)</h2>
+                <div class="section-subtitle">Google Play VpnService Policy Compliance</div>
+              </div>
+            </div>
+            <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
+            <p>The Application includes an optional, user-initiated feature called <strong>"Game Network Channel Focus"</strong>, which activates only after presenting an in-app Prominent Disclosure dialog and receiving explicit user consent:</p>
+            <ul>
+              <li><strong>100% Local On-Device Isolation:</strong> The feature uses Android's local <code>VpnService</code> API strictly on your device to block background data consumption from non-game apps during gameplay so your selected game uses your real Wi-Fi or mobile connection directly without local contention.</li>
+              <li><strong>No Remote VPN Server:</strong> The Application does not connect to any external or remote VPN server and never routes your network traffic through third-party infrastructure.</li>
+              <li><strong>No DNS Modification or Traffic Inspection:</strong> The Application does not configure custom DNS servers and never logs, inspects, intercepts, decrypts, collects, or shares any network traffic, packets, or browsing activity.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 3: Detailed Permissions & Foreground Services -->
+      <article class="expressive-item middle">
+        <div class="bilingual-grid">
+          <div class="ar-col ar-block">
+            <div class="section-header">
+              <div class="tile-icon secondary">3</div>
+              <div>
+                <h2 class="section-title">الأذونات والخدمات الأمامية في التطبيق</h2>
+                <div class="section-subtitle">شرح تفصيلي لجميع الأذونات المعلنة في AndroidManifest</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
+                <strong>العرض فوق التطبيقات الأخرى:</strong> يُستخدم حصرياً عند تشغيل المستخدم لـ "المؤشر التكتيكي العائم" (<code>CrosshairOverlayService</code>) أو "شريط التحكم السريع بالدقة" (<code>QuickControlOverlayService</code>). لا يقرأ التطبيق محتوى الشاشة ولا يسجل النقرات أو كلمات المرور.
+              </li>
+              <li>
+                <span class="perm-badge">FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_SPECIAL_USE &amp; POST_NOTIFICATIONS</span><br />
+                <strong>الخدمات الأمامية والإشعارات:</strong> تُستخدم فقط لإبقاء الأدوات التي يفعّلها المستخدم يدوياً (المؤشر العائم، شريط الدقة، تركيز الشبكة، أو تثبيت سرعة الجيروسكوب) قيد التشغيل مع إشعار واضح يتيح إيقاف الخدمة فوراً بضغطة زر.
+              </li>
+              <li>
+                <span class="perm-badge">WRITE_SETTINGS &amp; WRITE_SECURE_SETTINGS</span><br />
+                <strong>تعديل إعدادات النظام:</strong> يُستخدم فقط بطلب مباشر من المستخدم لضبط سطوع الشاشة أو تثبيت معدل تحديث الشاشة (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>) مع حفظ القيم الأصلية لاستعادتها في أي وقت.
+              </li>
+              <li>
+                <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
+                <strong>مستشعر الجيروسكوب عالي التردد:</strong> يُستخدم محلياً فقط لقراءة حركة الجيروسكوب داخل "مدرّب رد الفعل والتصويب" وخدمة استجابة الجيروسكوب (<code>GyroResponsivenessService</code>). لا تغادر بيانات المستشعر جهازك أبداً.
+              </li>
+              <li>
+                <span class="perm-badge">KILL_BACKGROUND_PROCESSES</span><br />
+                <strong>تحرير الذاكرة الخلفية:</strong> يُستخدم فقط عند الضغط على زر التعزيز في أداة "معزّز الألعاب" لتحرير ذاكرة RAM من العمليات الخلفية غير المستثناة.
+              </li>
+              <li>
+                <span class="perm-badge">INTERNET &amp; ACCESS_NETWORK_STATE &amp; ACCESS_WIFI_STATE</span><br />
+                <strong>قياس زمن الاستجابة (Ping):</strong> يُستخدم محلياً فقط لقياس زمن استجابة الشبكة (Latency/Jitter) وعرضه للمستخدم داخل لوحة التشخيص، دون إرسال أي بيانات شخصية.
+              </li>
+            </ul>
+          </div>
+
+          <div class="en-col en-block">
+            <div class="section-header">
+              <div class="tile-icon secondary">3</div>
+              <div>
+                <h2 class="section-title">Permissions &amp; Foreground Services Disclosure</h2>
+                <div class="section-subtitle">Complete breakdown of all AndroidManifest declarations</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
+                <strong>Display Over Other Apps:</strong> Used strictly when the user manually starts the floating Crosshair Reticle (<code>CrosshairOverlayService</code>) or Floating Aspect Slider Pill (<code>QuickControlOverlayService</code>). It never captures screen content, keystrokes, or personal data.
+              </li>
+              <li>
+                <span class="perm-badge">FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_SPECIAL_USE &amp; POST_NOTIFICATIONS</span><br />
+                <strong>Foreground Services &amp; Notifications:</strong> Used solely to keep user-activated tools (Crosshair Overlay, Quick Aspect Pill, Local Network Focus, or High-Rate Gyroscope Lock) active while displaying a visible status notification with an instant "Stop" button.
+              </li>
+              <li>
+                <span class="perm-badge">WRITE_SETTINGS &amp; WRITE_SECURE_SETTINGS</span><br />
+                <strong>System Display Settings:</strong> Used strictly upon explicit user action to toggle max brightness or pin display refresh rates (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>), with automatic backup and one-tap restore.
+              </li>
+              <li>
+                <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
+                <strong>High-Rate Gyroscope Sensor:</strong> Used purely on-device for the interactive Reflex &amp; Aim Trainer and user-enabled Gyroscope Responsiveness service (<code>GyroResponsivenessService</code>). Sensor readings are processed in memory and never transmitted.
+              </li>
+              <li>
+                <span class="perm-badge">KILL_BACKGROUND_PROCESSES</span><br />
+                <strong>Background Memory Optimization:</strong> Used only when the user taps Boost in Game Booster to request Android to free background RAM from non-excluded packages.
+              </li>
+              <li>
+                <span class="perm-badge">INTERNET &amp; ACCESS_NETWORK_STATE &amp; ACCESS_WIFI_STATE</span><br />
+                <strong>Network Latency Probe:</strong> Used strictly to measure real-time connection ping and jitter for the local telemetry dashboard without transmitting any user data.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 4: Shizuku, SAF Storage & Package Visibility -->
+      <article class="expressive-item middle">
+        <div class="bilingual-grid">
+          <div class="ar-col ar-block">
+            <div class="section-header">
+              <div class="tile-icon tertiary">4</div>
+              <div>
+                <h2 class="section-title">تكامل Shizuku والملفات ورؤية الحزم (&lt;queries&gt;)</h2>
+                <div class="section-subtitle">إدارة ملفات الإعدادات مع نسخ احتياطي تلقائي</div>
+              </div>
+            </div>
+            <ul>
+              <li><strong>تكامل Shizuku وSAF:</strong> يدعم التطبيق الربط الاختياري مع خدمة <code>moe.shizuku.privileged.api</code> أو إطار الوصول إلى التخزين في أندرويد (SAF) فقط لقراءة وكتابة ملفات إعدادات الرسوميات الخاصة باللعبة (<code>Active.sav</code> و<code>UserCustom.ini</code>) وأخذ نسخة احتياطية قبل أي تعديل. لا يصل التطبيق إلى صورك أو مستنداتك الشخصية.</li>
+              <li><strong>رؤية الحزم (Package Visibility):</strong> يعلن التطبيق عن حزم الألعاب المدعومة فقط في وسم <code>&lt;queries&gt;</code> للتحقق محلياً من النسخة المثبّتة على جهازك. لا يتم أبداً رفع قائمة التطبيقات المثبّتة أو مشاركتها.</li>
+            </ul>
+          </div>
+
+          <div class="en-col en-block">
+            <div class="section-header">
+              <div class="tile-icon tertiary">4</div>
+              <div>
+                <h2 class="section-title">Shizuku Bridge, File Access &amp; Package Visibility (&lt;queries&gt;)</h2>
+                <div class="section-subtitle">Configuration file management with automatic backups</div>
+              </div>
+            </div>
+            <ul>
+              <li><strong>Optional Shizuku &amp; SAF Access:</strong> The Application integrates with <code>moe.shizuku.privileged.api</code> or Android's Storage Access Framework (SAF) strictly at your request to back up and apply game graphics configuration files (<code>Active.sav</code> and <code>UserCustom.ini</code>). It never accesses personal photos, media, or documents.</li>
+              <li><strong>Package Visibility (<code>&lt;queries&gt;</code>):</strong> The manifest declares specific supported game packages and Shizuku solely to detect locally which game edition is installed on your device. Your installed package list is never collected, logged, or transmitted.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Section 5: Data Retention, Deletion & User Rights -->
+      <article class="expressive-item bottom">
+        <div class="bilingual-grid">
+          <div class="ar-col ar-block">
+            <div class="section-header">
+              <div class="tile-icon primary">5</div>
+              <div>
+                <h2 class="section-title">حذف البيانات، خصوصية الأطفال، وإخلاء المسؤولية</h2>
+                <div class="section-subtitle">التحكم الكامل ببياناتك المحلية وحقوق GDPR / CCPA / COPPA</div>
+              </div>
+            </div>
+            <ul>
+              <li><strong>حذف البيانات وإعادة الضبط:</strong> يمكنك مسح جميع التفضيلات والملفات المحفوظة والنسخ الاحتياطية فوراً من داخل التطبيق عبر زر <strong>"إعادة ضبط الإعدادات" (Reset App Settings)</strong> في شاشة الإعدادات، أو عبر مسح بيانات التطبيق من إعدادات أندرويد أو إلغاء تثبيته.</li>
+              <li><strong>خصوصية الأطفال (COPPA):</strong> لا يجمع التطبيق أي بيانات من أي فئة عمرية بما في ذلك الأطفال دون سن 13 عاماً.</li>
+              <li><strong>إخلاء المسؤولية:</strong> هذا التطبيق أداة مستقلة لتحسين العرض والأداء، وهو غير تابع أو معتمد رسمياً من Krafton, Inc. أو Tencent Games أو Level Infinite أو PUBG Corporation أو Shizuku.</li>
+              <li><strong>التواصل معنا:</strong> لأي استفسارات تتعلق بسياسة الخصوصية، يمكنك التواصل عبر صفحة المطور الرسمية في متجر Google Play أو عبر البريد الإلكتروني الموضح في صفحة المتجر.</li>
+            </ul>
+          </div>
+
+          <div class="en-col en-block">
+            <div class="section-header">
+              <div class="tile-icon primary">5</div>
+              <div>
+                <h2 class="section-title">Data Deletion, Children's Privacy &amp; Disclaimer</h2>
+                <div class="section-subtitle">Full local data control &amp; GDPR / CCPA / COPPA compliance</div>
+              </div>
+            </div>
+            <ul>
+              <li><strong>Data Retention &amp; Instant Deletion:</strong> Because all preferences, profiles, and backups reside solely on your device, you can permanently delete all stored data at any time by tapping <strong>"Reset App Settings"</strong> inside the app's Settings tab, clearing app storage in Android Settings, or uninstalling the Application.</li>
+              <li><strong>Children's Privacy (COPPA):</strong> We do not knowingly or unknowingly collect any personal information from anyone, including children under the age of 13.</li>
+              <li><strong>Independent Utility Disclaimer:</strong> 90 FPS + 120 FPS: GFX Booster is an independent display, configuration, and aim-training utility and is not affiliated with, endorsed by, or sponsored by Krafton, Inc., Tencent Games, Level Infinite, PUBG Corporation, or Shizuku.</li>
+              <li><strong>Contact Us:</strong> For any questions regarding this Privacy Policy or data practices, please contact us via the developer support email listed on our official Google Play Store listing page.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <footer class="footer">
+      90 FPS + 120 FPS: GFX Booster • Version 2.0.0 • Material 3 Expressive Privacy &amp; Data Safety Center
+    </footer>
+
+  </main>
+
+  <script>
+    function setLang(mode, btn) {
+      document.body.setAttribute('data-lang', mode);
+      if (mode === 'en') {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+      } else {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+      }
+      const group = btn.parentElement.querySelectorAll('.seg-btn');
+      group.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function setTheme(theme, btn) {
+      document.documentElement.setAttribute('data-theme', theme);
+      const group = btn.parentElement.querySelectorAll('.seg-btn');
+      group.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
