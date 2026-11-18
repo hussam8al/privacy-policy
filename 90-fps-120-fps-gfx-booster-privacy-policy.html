@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>90 FPS + 120 FPS: GFX Booster — Privacy Policy | سياسة الخصوصية</title>
-  <meta name="description" content="Official Privacy Policy & Google Play Data Safety Disclosure for 90 FPS + 120 FPS: GFX Booster (English & Arabic)." />
+  <meta name="description" content="Official Privacy Policy & Google Play Data Safety Disclosure for 90 FPS + 120 FPS: GFX Booster (com.english.save.words - Version 2.0.0 Build 22)." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -76,24 +76,24 @@
       background-color: var(--bg);
       color: var(--on-surface);
       font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-      line-height: 1.7;
+      line-height: 1.75;
       padding-bottom: 64px;
       transition: background-color 0.25s ease, color 0.25s ease;
     }
 
-    .en-block {
-      direction: ltr;
-      text-align: left;
+    body[data-lang="en"] {
       font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, sans-serif;
     }
 
-    .ar-block {
-      direction: rtl;
-      text-align: right;
-      font-family: 'Cairo', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    /* Strict single-language display: either Arabic OR English only */
+    body[data-lang="ar"] .lang-en {
+      display: none !important;
     }
 
-    /* Top App Bar matching NavigationAndScaffold.kt */
+    body[data-lang="en"] .lang-ar {
+      display: none !important;
+    }
+
     .top-bar {
       position: sticky;
       top: 0;
@@ -105,7 +105,7 @@
     }
 
     .top-bar-inner {
-      max-width: 1080px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 14px 20px;
       display: flex;
@@ -134,6 +134,8 @@
       font-weight: 800;
       color: var(--on-surface);
       line-height: 1.25;
+      direction: ltr;
+      text-align: start;
     }
 
     .brand-sub {
@@ -142,7 +144,6 @@
       font-weight: 600;
     }
 
-    /* Segmented Option Bar matching StudioComponents.kt SegmentedOptionBar */
     .controls-wrap {
       display: flex;
       align-items: center;
@@ -165,7 +166,7 @@
       font-family: inherit;
       font-size: 0.82rem;
       font-weight: 700;
-      padding: 7px 14px;
+      padding: 7px 16px;
       border-radius: 999px;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -178,7 +179,7 @@
     }
 
     .container {
-      max-width: 1080px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 22px 18px 0;
       display: flex;
@@ -186,7 +187,6 @@
       gap: 16px;
     }
 
-    /* Featured Hero Card matching FpsHubScreen primaryContainer hero */
     .hero-card {
       background: var(--primary-container);
       color: var(--on-primary-container);
@@ -234,21 +234,14 @@
       font-weight: 700;
     }
 
-    .pill-good {
-      background: var(--status-good-bg);
-      color: var(--status-good);
-      border: 1px solid color-mix(in srgb, var(--status-good) 35%, transparent);
-    }
-
     .pill-primary {
       background: var(--primary);
       color: var(--on-primary);
     }
 
-    /* 3 Metric Tiles Strip matching DeviceStatusStripCard in FpsHubScreen */
     .metrics-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 12px;
     }
 
@@ -271,7 +264,7 @@
       justify-content: center;
       flex-shrink: 0;
       font-weight: 800;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
     .tile-icon.good {
@@ -294,24 +287,15 @@
       color: var(--on-tertiary-container);
     }
 
-    /* StudioCard matching StudioComponents.kt (28dp rounded) */
-    .studio-card {
-      background: var(--surface);
-      border-radius: 28px;
-      padding: 22px;
-      border: 1px solid var(--outline-variant);
-    }
-
-    /* Expressive Group Cards matching ExpressiveGroupPos (TOP, MIDDLE, BOTTOM) */
     .expressive-group {
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 4px;
     }
 
     .expressive-item {
       background: var(--surface);
-      padding: 20px 22px;
+      padding: 22px 24px;
       border: 1px solid var(--outline-variant);
     }
 
@@ -327,33 +311,6 @@
       border-radius: 6px 6px 26px 26px;
     }
 
-    /* Bilingual Dual-Column Grid inside each card */
-    .bilingual-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    body[data-lang="ar"] .en-col {
-      display: none;
-    }
-
-    body[data-lang="en"] .ar-col {
-      display: none;
-    }
-
-    body[data-lang="ar"] .bilingual-grid,
-    body[data-lang="en"] .bilingual-grid {
-      grid-template-columns: 1fr;
-    }
-
-    @media (max-width: 820px) {
-      .bilingual-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     .section-header {
       display: flex;
       align-items: center;
@@ -362,7 +319,7 @@
     }
 
     .section-title {
-      font-size: 1.12rem;
+      font-size: 1.14rem;
       font-weight: 800;
       color: var(--on-surface);
     }
@@ -375,7 +332,7 @@
 
     p {
       color: var(--on-surface-variant);
-      font-size: 0.94rem;
+      font-size: 0.95rem;
       margin-bottom: 10px;
     }
 
@@ -383,13 +340,13 @@
       list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 10px;
       margin-top: 6px;
     }
 
     li {
       color: var(--on-surface-variant);
-      font-size: 0.92rem;
+      font-size: 0.93rem;
       position: relative;
       padding-inline-start: 18px;
     }
@@ -400,6 +357,11 @@
       font-weight: 800;
       position: absolute;
       inset-inline-start: 2px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
     }
 
     code {
@@ -423,33 +385,26 @@
       font-weight: 700;
       padding: 3px 10px;
       border-radius: 999px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
       direction: ltr;
-    }
-
-    .divider {
-      height: 1px;
-      background: var(--outline-variant);
-      margin: 14px 0;
     }
 
     .footer {
       text-align: center;
       color: var(--on-surface-variant);
-      font-size: 0.84rem;
+      font-size: 0.85rem;
       margin-top: 12px;
       padding: 16px;
     }
   </style>
 </head>
-<body data-lang="both">
+<body data-lang="ar">
 
   <!-- Sticky TopAppBar -->
   <header class="top-bar">
     <div class="top-bar-inner">
       <div class="brand-row">
-        <!-- Exact 165 FPS App Icon SVG -->
-        <svg class="app-icon-svg" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-label="165 FPS Icon">
+        <svg class="app-icon-svg" viewBox="0 0 108 108" xmlns="http://www.w3.org/2000/svg" aria-label="App Icon">
           <defs>
             <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#090D16" />
@@ -467,19 +422,24 @@
         </svg>
         <div>
           <div class="brand-title">90 FPS + 120 FPS: GFX Booster</div>
-          <div class="brand-sub">Privacy Policy &amp; Google Play Data Safety • سياسة الخصوصية وأمان البيانات</div>
+          <div class="brand-sub lang-ar">سياسة الخصوصية وأمان البيانات في Google Play</div>
+          <div class="brand-sub lang-en">Privacy Policy &amp; Google Play Data Safety</div>
         </div>
       </div>
 
       <div class="controls-wrap">
+        <!-- Single-Language Switcher: Arabic OR English only -->
         <div class="segmented-bar" role="group" aria-label="Language Switcher">
-          <button type="button" class="seg-btn active" onclick="setLang('both', this)">عربي + EN</button>
-          <button type="button" class="seg-btn" onclick="setLang('ar', this)">العربية</button>
-          <button type="button" class="seg-btn" onclick="setLang('en', this)">English</button>
+          <button type="button" id="btn-lang-ar" class="seg-btn active" onclick="setLang('ar')">العربية</button>
+          <button type="button" id="btn-lang-en" class="seg-btn" onclick="setLang('en')">English</button>
         </div>
         <div class="segmented-bar" role="group" aria-label="Theme Switcher">
-          <button type="button" class="seg-btn active" onclick="setTheme('dark', this)">داكن • Dark</button>
-          <button type="button" class="seg-btn" onclick="setTheme('light', this)">فاتح • Light</button>
+          <button type="button" id="btn-theme-dark" class="seg-btn active" onclick="setTheme('dark')">
+            <span class="lang-ar">داكن</span><span class="lang-en">Dark</span>
+          </button>
+          <button type="button" id="btn-theme-light" class="seg-btn" onclick="setTheme('light')">
+            <span class="lang-ar">فاتح</span><span class="lang-en">Light</span>
+          </button>
         </div>
       </div>
     </div>
@@ -498,52 +458,63 @@
             </svg>
           </div>
           <div>
-            <h1 style="font-size: 1.35rem; font-weight: 800; line-height: 1.3;">
-              سياسة الخصوصية الرسمية • Official Privacy Policy
+            <h1 class="lang-ar" style="font-size: 1.35rem; font-weight: 800; line-height: 1.3;">
+              سياسة الخصوصية الرسمية وإفصاح أمان البيانات
             </h1>
-            <div style="font-size: 0.86rem; opacity: 0.9;">
-              Effective Date / تاريخ السريان: 2026-11-18 &nbsp;•&nbsp; Package ID: <code>com.english.save.words</code>
+            <h1 class="lang-en" style="font-size: 1.35rem; font-weight: 800; line-height: 1.3;">
+              Official Privacy Policy &amp; Data Safety Disclosure
+            </h1>
+            <div class="lang-ar" style="font-size: 0.86rem; opacity: 0.92;">
+              تاريخ السريان: 2026-11-18 &nbsp;•&nbsp; الإصدار: <code>2.0.0 (22)</code> &nbsp;•&nbsp; الحزمة: <code>com.english.save.words</code>
+            </div>
+            <div class="lang-en" style="font-size: 0.86rem; opacity: 0.92;">
+              Effective Date: 2026-11-18 &nbsp;•&nbsp; Version: <code>2.0.0 (22)</code> &nbsp;•&nbsp; Package: <code>com.english.save.words</code>
             </div>
           </div>
         </div>
-        <span class="pill-chip pill-primary">100% On-Device • معالجة محلية بالكامل</span>
+        <span class="pill-chip pill-primary lang-ar">معالجة الإعدادات محلياً 100%</span>
+        <span class="pill-chip pill-primary lang-en">100% On-Device Tuning</span>
       </div>
 
-      <div class="bilingual-grid">
-        <div class="ar-col ar-block">
-          <p style="color: var(--on-primary-container); margin-bottom: 0;">
-            يعمل تطبيق <strong>90 FPS + 120 FPS: GFX Booster</strong> محلياً بنسبة <strong>100% على جهازك</strong>. لا نقوم بجمع أو تخزين أو بيع أو مشاركة أي بيانات شخصية أو معرّفات أجهزة أو بيانات تصفح مع أي خوادم خارجية أو أطراف ثالثة.
-          </p>
-        </div>
-        <div class="en-col en-block">
-          <p style="color: var(--on-primary-container); margin-bottom: 0;">
-            <strong>90 FPS + 120 FPS: GFX Booster</strong> operates <strong>100% locally on your device</strong>. We do not collect, store, transmit, sell, or share any personal data, device identifiers, or user traffic with any remote servers or third parties.
-          </p>
-        </div>
+      <div class="lang-ar">
+        <p style="color: var(--on-primary-container); margin-bottom: 0;">
+          توضح سياسة الخصوصية هذه كيفية تعامل تطبيق <strong>90 FPS + 120 FPS: GFX Booster</strong> (معرّف الحزمة <code>com.english.save.words</code>، الإصدار <code>2.0.0</code> رقم البناء <code>22</code>) مع البيانات والأذونات. تعمل جميع أدوات ضبط الإطارات، والرسوميات (GFX)، ومنظور الآيباد، والمؤشر العائم، وتركيز الشبكة، ومدرب التصويب <strong>محلياً بالكامل على جهازك</strong> دون الحاجة لإنشاء حساب، مع استخدام خدمات Google الرسمية المعتمدة فقط (Google AdMob للإعلانات، وGoogle Play Billing للاشتراكات وإزالة الإعلانات، وGoogle Play Core للتحديثات والتقييم).
+        </p>
+      </div>
+      <div class="lang-en">
+        <p style="color: var(--on-primary-container); margin-bottom: 0;">
+          This Privacy Policy explains how <strong>90 FPS + 120 FPS: GFX Booster</strong> (Package ID <code>com.english.save.words</code>, Version <code>2.0.0</code> Build <code>22</code>) handles data and device permissions. All frame rate tuning, GFX compilation, iPad View resolution scaling, Crosshair overlays, Network Focus isolation, and Reflex Trainer drills execute <strong>100% locally on your device</strong> without requiring user registration, utilizing only official Google Play services (Google AdMob for ads, Google Play Billing for ad-free upgrades, and Google Play Core for updates and in-app reviews).
+        </p>
       </div>
     </section>
 
-    <!-- 2. Quick Data Safety Summary Strip (Matching FpsHubScreen Status Metric Tiles) -->
+    <!-- 2. Quick Data Safety Summary Strip -->
     <section class="metrics-grid" aria-label="Google Play Data Safety Summary">
       <div class="metric-tile">
-        <div class="tile-icon good">0%</div>
+        <div class="tile-icon good">LOCAL</div>
         <div>
-          <div style="font-weight: 800; font-size: 0.96rem;">لا يتم جمع أي بيانات • Zero Data Collected</div>
-          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">No PII, contacts, location, or media collected</div>
+          <div class="lang-ar" style="font-weight: 800; font-size: 0.96rem;">بدون حسابات أو خوادم خاصة</div>
+          <div class="lang-ar" style="font-size: 0.8rem; color: var(--on-surface-variant);">تُحفظ الإعدادات والنسخ الاحتياطية في Room وDataStore محلياً</div>
+          <div class="lang-en" style="font-weight: 800; font-size: 0.96rem;">No Accounts or Private Servers</div>
+          <div class="lang-en" style="font-size: 0.8rem; color: var(--on-surface-variant);">Profiles &amp; backups stay in local Room SQLite &amp; DataStore</div>
         </div>
       </div>
       <div class="metric-tile">
-        <div class="tile-icon primary">LOCAL</div>
+        <div class="tile-icon primary">VPN</div>
         <div>
-          <div style="font-weight: 800; font-size: 0.96rem;">بدون خوادم خارجية • No Remote Servers</div>
-          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">Room SQLite &amp; Jetpack DataStore on-device only</div>
+          <div class="lang-ar" style="font-weight: 800; font-size: 0.96rem;">عزل شبكة محلي 100%</div>
+          <div class="lang-ar" style="font-size: 0.8rem; color: var(--on-surface-variant);">واجهة VpnService تعمل داخل الجهاز فقط بدون خادم خارجي أو DNS</div>
+          <div class="lang-en" style="font-weight: 800; font-size: 0.96rem;">100% On-Device Network Focus</div>
+          <div class="lang-en" style="font-size: 0.8rem; color: var(--on-surface-variant);">Local VpnService with no remote server, DNS, or traffic logging</div>
         </div>
       </div>
       <div class="metric-tile">
-        <div class="tile-icon tertiary">NO SDK</div>
+        <div class="tile-icon tertiary">GOOGLE</div>
         <div>
-          <div style="font-weight: 800; font-size: 0.96rem;">بدون إعلانات أو تتبع • Zero Ads or Trackers</div>
-          <div style="font-size: 0.8rem; color: var(--on-surface-variant);">No third-party analytics or advertising SDKs</div>
+          <div class="lang-ar" style="font-weight: 800; font-size: 0.96rem;">خدمات Google الرسمية فقط</div>
+          <div class="lang-ar" style="font-size: 0.8rem; color: var(--on-surface-variant);">Google AdMob للإعلانات وGoogle Play Billing للشراء</div>
+          <div class="lang-en" style="font-weight: 800; font-size: 0.96rem;">Official Google Play SDKs</div>
+          <div class="lang-en" style="font-size: 0.8rem; color: var(--on-surface-variant);">Google AdMob, Google Play Billing &amp; Play Core APIs</div>
         </div>
       </div>
     </section>
@@ -551,258 +522,322 @@
     <!-- 3. Expressive Group: Core Privacy & Data Safety Sections -->
     <div class="expressive-group">
 
-      <!-- Section 1: Information Collection & Use -->
+      <!-- Section 1: Information Collection & Local Storage -->
       <article class="expressive-item top">
-        <div class="bilingual-grid">
-          <div class="ar-col ar-block">
-            <div class="section-header">
-              <div class="tile-icon primary">1</div>
-              <div>
-                <h2 class="section-title">جمع المعلومات واستخدامها (Data Safety)</h2>
-                <div class="section-subtitle">إفصاح قسم أمان البيانات في Google Play</div>
-              </div>
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon primary">1</div>
+            <div>
+              <h2 class="section-title">البيانات التي نجمعها والتخزين المحلي (Data Safety)</h2>
+              <div class="section-subtitle">إفصاح قسم أمان البيانات في متجر Google Play</div>
             </div>
-            <p>تم تصميم التطبيق كأداة تقنية محلية لضبط إعدادات الإطارات، الرسوميات، والتدريب على التصويب دون الحاجة لإنشاء حساب أو الاتصال بأي سحابة:</p>
-            <ul>
-              <li><strong>المعلومات الشخصية:</strong> لا يطلب التطبيق ولا يجمع الاسم أو البريد الإلكتروني أو رقم الهاتف أو الموقع الجغرافي أو جهات الاتصال.</li>
-              <li><strong>معرّفات الجهاز والتتبع:</strong> لا يجمع التطبيق معرّف الإعلانات (Advertising ID) أو عنوان IP أو بصمة الجهاز ولا يحتوي على أي حزم SDK إعلانية أو تحليلية.</li>
-              <li><strong>التخزين المحلي فقط:</strong> تُحفظ تفضيلات اللغة والسمة، ملفات GFX المحفوظة، النسخ الاحتياطية التلقائية، ونتائج مدرب رد الفعل محلياً داخل مساحة التطبيق الخاصة (<code>DataStore</code> وقاعدة بيانات <code>Room</code>) على جهازك فقط.</li>
-            </ul>
           </div>
+          <p>لا يطلب التطبيق إنشاء حساب ولا يمتلك أي خوادم سحابية خاصة لجمع بيانات المستخدمين:</p>
+          <ul>
+            <li><strong>عدم جمع البيانات الشخصية الحساسة:</strong> لا يطلب التطبيق ولا يجمع اسمك، أو بريدك الإلكتروني، أو رقم هاتفك، أو موقعك الجغرافي الدقيق (GPS)، أو جهات الاتصال، أو الصور، أو الكاميرا، أو الميكروفون.</li>
+            <li><strong>التخزين المحلي على الجهاز فقط:</strong> تُحفظ تفضيلات اللغة والسمة، وملفات إعدادات الرسوميات (GFX Profiles)، والنسخ الاحتياطية التلقائية لملفات <code>Active.sav</code> و<code>UserCustom.ini</code>، وسجلات أداة تدريب التصويب محلياً داخل الذاكرة الداخلية الخاصة بالتطبيق (<code>Room SQLite</code> و<code>Jetpack DataStore</code>) ولا تغادر جهازك أبداً.</li>
+            <li><strong>النسخ الاحتياطي لنظام أندرويد:</strong> يقتصر النسخ الاحتياطي التلقائي للنظام (<code>data_extraction_rules.xml</code>) على قاعدة بيانات ملفات تعريف الرسوميات المحلية الخاصة بك مع استثناء الملفات المؤقتة.</li>
+          </ul>
+        </div>
 
-          <div class="en-col en-block">
-            <div class="section-header">
-              <div class="tile-icon primary">1</div>
-              <div>
-                <h2 class="section-title">Information Collection &amp; Use (Data Safety)</h2>
-                <div class="section-subtitle">Google Play Data Safety Section Disclosure</div>
-              </div>
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon primary">1</div>
+            <div>
+              <h2 class="section-title">Information Collection &amp; Local Storage (Data Safety)</h2>
+              <div class="section-subtitle">Google Play Data Safety Section Disclosure</div>
             </div>
-            <p>The Application is engineered as a standalone local utility for frame rate configuration, graphics tuning, and aim training without requiring user accounts or cloud connectivity:</p>
-            <ul>
-              <li><strong>Personal Information:</strong> We do not request, access, or collect your name, email address, phone number, physical location, photos, microphone, camera, or contacts.</li>
-              <li><strong>Device Identifiers &amp; Tracking:</strong> We do not collect Advertising IDs, IP addresses, or device fingerprints, and we do not bundle any third-party analytics or advertising SDKs.</li>
-              <li><strong>Strictly Local Storage:</strong> Language/theme preferences, saved GFX profiles, automatic configuration backups, and Reflex Trainer scores are stored exclusively inside your device's private internal storage (Android Jetpack <code>DataStore</code> and <code>Room</code> SQLite database).</li>
-            </ul>
           </div>
+          <p>The Application does not require user registration and operates no proprietary backend servers to collect user data:</p>
+          <ul>
+            <li><strong>No Sensitive Personal Information Collected:</strong> We do not request, access, or collect your name, email address, phone number, precise GPS location, contacts, photos, microphone, or camera.</li>
+            <li><strong>Strictly On-Device Storage:</strong> Language and theme preferences, custom GFX profiles, automatic backups of <code>Active.sav</code> and <code>UserCustom.ini</code>, and Reflex Trainer scores are stored exclusively inside your device's private application storage (<code>Room SQLite</code> and <code>Jetpack DataStore</code>) and never leave your device.</li>
+            <li><strong>Android Auto-Backup Rules:</strong> System cloud/device transfer rules (<code>data_extraction_rules.xml</code>) include only your local Room profile database while excluding temporary backup files.</li>
+          </ul>
         </div>
       </article>
 
-      <!-- Section 2: VpnService Prominent Disclosure (Critical for Google Play Console) -->
+      <!-- Section 2: Google AdMob, Play Billing & Play Core Services -->
       <article class="expressive-item middle">
-        <div class="bilingual-grid">
-          <div class="ar-col ar-block">
-            <div class="section-header">
-              <div class="tile-icon good">2</div>
-              <div>
-                <h2 class="section-title">إفصاح خدمة الشبكة المحلية (Android VpnService)</h2>
-                <div class="section-subtitle">متوافق مع سياسة VpnService في Google Play</div>
-              </div>
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon tertiary">2</div>
+            <div>
+              <h2 class="section-title">الإعلانات (Google AdMob) والمشتريات وخدمات Google Play</h2>
+              <div class="section-subtitle">إفصاح حزم Google الرسمية المدمجة في التطبيق</div>
             </div>
-            <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
-            <p>يتضمن التطبيق ميزة اختيارية باسم <strong>"تركيز شبكة اللعبة" (Game Network Channel Focus)</strong>، والتي لا تعمل إلا بعد عرض إفصاح واضح داخل التطبيق وموافقة المستخدم الصريحة:</p>
-            <ul>
-              <li><strong>عزل محلي 100% على الجهاز:</strong> تستخدم الميزة واجهة <code>VpnService</code> الرسمية في أندرويد محلياً داخل جهازك فقط لإيقاف استهلاك البيانات في الخلفية من التطبيقات غير المختارة أثناء اللعب، بحيث تستخدم لعبتك اتصال Wi-Fi أو بيانات الهاتف الفعلي مباشرة دون ازدحام.</li>
-              <li><strong>لا يوجد خادم VPN خارجي:</strong> لا يتصل التطبيق بأي خادم VPN عن بُعد، ولا يعيد توجيه حركة مرور الإنترنت خارج جهازك.</li>
-              <li><strong>لا يتم تغيير DNS أو فحص البيانات:</strong> لا يقوم التطبيق بضبط أي خوادم DNS مخصّصة، ولا يقوم بجمع أو قراءة أو فحص أو فك تشفير أو تسجيل أو مشاركة أي حزم شبكة أو سجل تصفح.</li>
-            </ul>
           </div>
+          <span class="perm-badge">com.google.android.gms.permission.AD_ID • com.android.vending.BILLING</span>
+          <ul>
+            <li>
+              <strong>إعلانات Google AdMob (<code>com.google.android.gms:play-services-ads</code>):</strong>
+              يعرض التطبيق إعلانات (بانر <code>300x250</code>، إعلان مدمج في قائمة الأدوات، إعلان فتح الشاشة، إعلانات بينية عند تفعيل الأدوات، وإعلان مكافأة لتطبيق معدل الإطارات) لدعم استمرارية التطبيق مجاناً. قد تستخدم حزمة Google Mobile Ads SDK معرّف الإعلانات في أندرويد (<code>AD_ID</code>)، ومعلومات الجهاز والشبكة التقريبية، وتفاعلات الإعلانات لتقديم الإعلانات ومنع الاحتيال وقياس الأداء وفقاً لـ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة خصوصية Google</a>. يمكنك إعادة تعيين معرّف الإعلانات أو حذفه في أي وقت من إعدادات جهازك (الإعدادات &larr; Google &larr; الإعلانات).
+            </li>
+            <li>
+              <strong>المشتريات والاشتراكات عبر Google Play Billing (<code>com.android.billingclient:billing-ktx</code>):</strong>
+              يوفر التطبيق خيار الترقية وإزالة الإعلانات بالكامل عبر نظام الدفع الرسمي في Google Play. تتم جميع عمليات الدفع والفوترة مباشرة وبأمان عبر شركة Google، ولا يطلع التطبيق أبداً على بيانات بطاقتك البنكية أو معلومات الدفع الخاصة بك.
+            </li>
+            <li>
+              <strong>التقييم والتحديثات داخل التطبيق (<code>Google Play In-App Review &amp; In-App Updates</code>):</strong>
+              يستخدم التطبيق مكتبات Google Play Core الرسمية للتحقق من توفر تحديثات إلزامية جديدة على المتجر ولعرض نافذة التقييم الرسمية الخاصة بمتجر Google Play.
+            </li>
+          </ul>
+        </div>
 
-          <div class="en-col en-block">
-            <div class="section-header">
-              <div class="tile-icon good">2</div>
-              <div>
-                <h2 class="section-title">Local Network Isolation Disclosure (Android VpnService)</h2>
-                <div class="section-subtitle">Google Play VpnService Policy Compliance</div>
-              </div>
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon tertiary">2</div>
+            <div>
+              <h2 class="section-title">Advertising (Google AdMob), Play Billing &amp; Google Play Services</h2>
+              <div class="section-subtitle">Disclosure of integrated official Google SDKs</div>
             </div>
-            <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
-            <p>The Application includes an optional, user-initiated feature called <strong>"Game Network Channel Focus"</strong>, which activates only after presenting an in-app Prominent Disclosure dialog and receiving explicit user consent:</p>
-            <ul>
-              <li><strong>100% Local On-Device Isolation:</strong> The feature uses Android's local <code>VpnService</code> API strictly on your device to block background data consumption from non-game apps during gameplay so your selected game uses your real Wi-Fi or mobile connection directly without local contention.</li>
-              <li><strong>No Remote VPN Server:</strong> The Application does not connect to any external or remote VPN server and never routes your network traffic through third-party infrastructure.</li>
-              <li><strong>No DNS Modification or Traffic Inspection:</strong> The Application does not configure custom DNS servers and never logs, inspects, intercepts, decrypts, collects, or shares any network traffic, packets, or browsing activity.</li>
-            </ul>
           </div>
+          <span class="perm-badge">com.google.android.gms.permission.AD_ID • com.android.vending.BILLING</span>
+          <ul>
+            <li>
+              <strong>Google AdMob Advertising (<code>com.google.android.gms:play-services-ads</code>):</strong>
+              To keep the Application free, we display advertisements (<code>300x250</code> banners, native tool cards, app-open ads, interstitial ads upon tool activation, and rewarded ads to unlock FPS presets) powered by the official Google Mobile Ads SDK. The Google Mobile Ads SDK may automatically access your device's Android Advertising ID (<code>AD_ID</code>), coarse IP-based location, basic device diagnostics, and ad interaction metrics for ad delivery, frequency capping, and fraud prevention in accordance with <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>. You can reset or delete your Advertising ID at any time in your device's Android Settings (Settings &rarr; Google &rarr; Ads).
+            </li>
+            <li>
+              <strong>Google Play In-App Billing (<code>com.android.billingclient:billing-ktx</code>):</strong>
+              The Application offers optional ad-free upgrades and subscriptions through Google Play Billing. All payment transactions are processed directly and securely by Google Play; our Application never accesses, processes, or stores your credit card or banking information.
+            </li>
+            <li>
+              <strong>Google Play In-App Updates &amp; Review (<code>play:app-update-ktx</code> &amp; <code>play:review-ktx</code>):</strong>
+              Used solely to check Google Play for mandatory version updates and to display Google Play's native in-app review sheet.
+            </li>
+          </ul>
         </div>
       </article>
 
-      <!-- Section 3: Detailed Permissions & Foreground Services -->
+      <!-- Section 3: VpnService Prominent Disclosure -->
       <article class="expressive-item middle">
-        <div class="bilingual-grid">
-          <div class="ar-col ar-block">
-            <div class="section-header">
-              <div class="tile-icon secondary">3</div>
-              <div>
-                <h2 class="section-title">الأذونات والخدمات الأمامية في التطبيق</h2>
-                <div class="section-subtitle">شرح تفصيلي لجميع الأذونات المعلنة في AndroidManifest</div>
-              </div>
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon good">3</div>
+            <div>
+              <h2 class="section-title">إفصاح خدمة الشبكة المحلية (Android VpnService)</h2>
+              <div class="section-subtitle">متوافق مع سياسة VpnService والإفصاح البارز في Google Play</div>
             </div>
-            <ul>
-              <li>
-                <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
-                <strong>العرض فوق التطبيقات الأخرى:</strong> يُستخدم حصرياً عند تشغيل المستخدم لـ "المؤشر التكتيكي العائم" (<code>CrosshairOverlayService</code>) أو "شريط التحكم السريع بالدقة" (<code>QuickControlOverlayService</code>). لا يقرأ التطبيق محتوى الشاشة ولا يسجل النقرات أو كلمات المرور.
-              </li>
-              <li>
-                <span class="perm-badge">FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_SPECIAL_USE &amp; POST_NOTIFICATIONS</span><br />
-                <strong>الخدمات الأمامية والإشعارات:</strong> تُستخدم فقط لإبقاء الأدوات التي يفعّلها المستخدم يدوياً (المؤشر العائم، شريط الدقة، تركيز الشبكة، أو تثبيت سرعة الجيروسكوب) قيد التشغيل مع إشعار واضح يتيح إيقاف الخدمة فوراً بضغطة زر.
-              </li>
-              <li>
-                <span class="perm-badge">WRITE_SETTINGS &amp; WRITE_SECURE_SETTINGS</span><br />
-                <strong>تعديل إعدادات النظام:</strong> يُستخدم فقط بطلب مباشر من المستخدم لضبط سطوع الشاشة أو تثبيت معدل تحديث الشاشة (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>) مع حفظ القيم الأصلية لاستعادتها في أي وقت.
-              </li>
-              <li>
-                <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
-                <strong>مستشعر الجيروسكوب عالي التردد:</strong> يُستخدم محلياً فقط لقراءة حركة الجيروسكوب داخل "مدرّب رد الفعل والتصويب" وخدمة استجابة الجيروسكوب (<code>GyroResponsivenessService</code>). لا تغادر بيانات المستشعر جهازك أبداً.
-              </li>
-              <li>
-                <span class="perm-badge">KILL_BACKGROUND_PROCESSES</span><br />
-                <strong>تحرير الذاكرة الخلفية:</strong> يُستخدم فقط عند الضغط على زر التعزيز في أداة "معزّز الألعاب" لتحرير ذاكرة RAM من العمليات الخلفية غير المستثناة.
-              </li>
-              <li>
-                <span class="perm-badge">INTERNET &amp; ACCESS_NETWORK_STATE &amp; ACCESS_WIFI_STATE</span><br />
-                <strong>قياس زمن الاستجابة (Ping):</strong> يُستخدم محلياً فقط لقياس زمن استجابة الشبكة (Latency/Jitter) وعرضه للمستخدم داخل لوحة التشخيص، دون إرسال أي بيانات شخصية.
-              </li>
-            </ul>
           </div>
+          <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
+          <p>يتضمن التطبيق ميزة اختيارية باسم <strong>"تركيز شبكة اللعبة" (Game Network Channel Focus)</strong>، والتي لا تعمل إلا بطلب يدوي من المستخدم وبعد عرض نافذة إفصاح بارزة داخل التطبيق والموافقة الصريحة عليها:</p>
+          <ul>
+            <li><strong>عزل محلي 100% داخل الجهاز:</strong> تستخدم هذه الأداة واجهة <code>VpnService</code> الرسمية في أندرويد محلياً داخل جهازك فقط لحجب استهلاك البيانات في الخلفية من التطبيقات الأخرى غير اللعبة المختارة، بحيث تستخدم لعبتك اتصال Wi-Fi أو الشبكة الخلوية الفعلي مباشرة بأقل زمن استجابة (Ping).</li>
+            <li><strong>لا يوجد خادم VPN خارجي:</strong> لا يتصل التطبيق بأي خادم VPN عن بُعد، ولا يوجه حركة مرور الإنترنت عبر أي خوادم خارجية.</li>
+            <li><strong>عدم تغيير DNS أو تسجيل البيانات:</strong> لا يغيّر التطبيق إعدادات DNS، ولا يقوم أبداً بجمع أو فحص أو قراءة أو فك تشفير أو تخزين أو مشاركة أي حزم بيانات أو سجل تصفح.</li>
+          </ul>
+        </div>
 
-          <div class="en-col en-block">
-            <div class="section-header">
-              <div class="tile-icon secondary">3</div>
-              <div>
-                <h2 class="section-title">Permissions &amp; Foreground Services Disclosure</h2>
-                <div class="section-subtitle">Complete breakdown of all AndroidManifest declarations</div>
-              </div>
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon good">3</div>
+            <div>
+              <h2 class="section-title">Local Network Isolation Disclosure (Android VpnService)</h2>
+              <div class="section-subtitle">Google Play VpnService Policy &amp; Prominent Disclosure Compliance</div>
             </div>
-            <ul>
-              <li>
-                <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
-                <strong>Display Over Other Apps:</strong> Used strictly when the user manually starts the floating Crosshair Reticle (<code>CrosshairOverlayService</code>) or Floating Aspect Slider Pill (<code>QuickControlOverlayService</code>). It never captures screen content, keystrokes, or personal data.
-              </li>
-              <li>
-                <span class="perm-badge">FOREGROUND_SERVICE &amp; FOREGROUND_SERVICE_SPECIAL_USE &amp; POST_NOTIFICATIONS</span><br />
-                <strong>Foreground Services &amp; Notifications:</strong> Used solely to keep user-activated tools (Crosshair Overlay, Quick Aspect Pill, Local Network Focus, or High-Rate Gyroscope Lock) active while displaying a visible status notification with an instant "Stop" button.
-              </li>
-              <li>
-                <span class="perm-badge">WRITE_SETTINGS &amp; WRITE_SECURE_SETTINGS</span><br />
-                <strong>System Display Settings:</strong> Used strictly upon explicit user action to toggle max brightness or pin display refresh rates (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>), with automatic backup and one-tap restore.
-              </li>
-              <li>
-                <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
-                <strong>High-Rate Gyroscope Sensor:</strong> Used purely on-device for the interactive Reflex &amp; Aim Trainer and user-enabled Gyroscope Responsiveness service (<code>GyroResponsivenessService</code>). Sensor readings are processed in memory and never transmitted.
-              </li>
-              <li>
-                <span class="perm-badge">KILL_BACKGROUND_PROCESSES</span><br />
-                <strong>Background Memory Optimization:</strong> Used only when the user taps Boost in Game Booster to request Android to free background RAM from non-excluded packages.
-              </li>
-              <li>
-                <span class="perm-badge">INTERNET &amp; ACCESS_NETWORK_STATE &amp; ACCESS_WIFI_STATE</span><br />
-                <strong>Network Latency Probe:</strong> Used strictly to measure real-time connection ping and jitter for the local telemetry dashboard without transmitting any user data.
-              </li>
-            </ul>
           </div>
+          <span class="perm-badge">android.permission.BIND_VPN_SERVICE • GameNetworkFocusService</span>
+          <p>The Application includes an optional, user-initiated feature called <strong>"Game Network Channel Focus"</strong>, which activates only after displaying an in-app Prominent Disclosure dialog and obtaining your explicit consent:</p>
+          <ul>
+            <li><strong>100% On-Device Local Isolation:</strong> Uses Android's local <code>VpnService</code> API strictly on your device to pause background network usage from non-game apps during gameplay so your selected game utilizes your direct Wi-Fi or cellular connection without local contention.</li>
+            <li><strong>No Remote VPN Server:</strong> The Application does not connect to any external VPN server and never routes your traffic outside your device.</li>
+            <li><strong>No DNS Changes or Traffic Logging:</strong> Does not configure custom DNS servers and never logs, inspects, intercepts, decrypts, collects, or transmits any network packets or browsing traffic.</li>
+          </ul>
         </div>
       </article>
 
-      <!-- Section 4: Shizuku, SAF Storage & Package Visibility -->
+      <!-- Section 4: Detailed Permissions & Foreground Services -->
       <article class="expressive-item middle">
-        <div class="bilingual-grid">
-          <div class="ar-col ar-block">
-            <div class="section-header">
-              <div class="tile-icon tertiary">4</div>
-              <div>
-                <h2 class="section-title">تكامل Shizuku والملفات ورؤية الحزم (&lt;queries&gt;)</h2>
-                <div class="section-subtitle">إدارة ملفات الإعدادات مع نسخ احتياطي تلقائي</div>
-              </div>
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon secondary">4</div>
+            <div>
+              <h2 class="section-title">الأذونات والخدمات الأمامية المعلنة في التطبيق</h2>
+              <div class="section-subtitle">شرح تفصيلي لجميع الأذونات في AndroidManifest.xml</div>
             </div>
-            <ul>
-              <li><strong>تكامل Shizuku وSAF:</strong> يدعم التطبيق الربط الاختياري مع خدمة <code>moe.shizuku.privileged.api</code> أو إطار الوصول إلى التخزين في أندرويد (SAF) فقط لقراءة وكتابة ملفات إعدادات الرسوميات الخاصة باللعبة (<code>Active.sav</code> و<code>UserCustom.ini</code>) وأخذ نسخة احتياطية قبل أي تعديل. لا يصل التطبيق إلى صورك أو مستنداتك الشخصية.</li>
-              <li><strong>رؤية الحزم (Package Visibility):</strong> يعلن التطبيق عن حزم الألعاب المدعومة فقط في وسم <code>&lt;queries&gt;</code> للتحقق محلياً من النسخة المثبّتة على جهازك. لا يتم أبداً رفع قائمة التطبيقات المثبّتة أو مشاركتها.</li>
-            </ul>
           </div>
+          <ul>
+            <li>
+              <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
+              <strong>العرض فوق التطبيقات الأخرى:</strong> يُستخدم حصرياً عندما يفعّل المستخدم يدوياً "المؤشر التكتيكي العائم" (<code>CrosshairOverlayService</code>) أو "شريط التحكم السريع بالدقة" (<code>QuickControlOverlayService</code>). لا يلتقط التطبيق محتوى الشاشة ولا يسجل النقرات.
+            </li>
+            <li>
+              <span class="perm-badge">FOREGROUND_SERVICE • FOREGROUND_SERVICE_SPECIAL_USE • POST_NOTIFICATIONS</span><br />
+              <strong>الخدمات الأمامية والإشعارات:</strong> تُستخدم فقط لإبقاء الأدوات التي يشغلها المستخدم بنفسه (المؤشر العائم، شريط الدقة، تركيز الشبكة المحلية، أولوية شبكة Shizuku، أو قفل استجابة الجيروسكوب) نشطة أثناء اللعب مع إشعار واضح يتضمن زر إيقاف فوري (Stop).
+            </li>
+            <li>
+              <span class="perm-badge">WRITE_SETTINGS • WRITE_SECURE_SETTINGS</span><br />
+              <strong>تعديل إعدادات العرض والنظام:</strong> يُستخدم فقط عند تفعيل المستخدم لخيار تثبيت تردد الشاشة (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>)، أو سرعة استجابة اللمس، أو أقصى سطوع، مع حفظ القيم الأصلية تلقائياً لاستعادتها بضغطة زر.
+            </li>
+            <li>
+              <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
+              <strong>مستشعر الجيروسكوب عالي التردد (&gt;200Hz):</strong> يُستخدم محلياً فقط لقراءة حركة الجيروسكوب داخل "مدرّب رد الفعل والتصويب" وخدمة "تثبيت أقصى استجابة للجيروسكوب" (<code>GyroResponsivenessService</code>). تُعالج القراءات لحظياً في الذاكرة ولا يتم حفظها أو إرسالها.
+            </li>
+            <li>
+              <span class="perm-badge">KILL_BACKGROUND_PROCESSES • WAKE_LOCK</span><br />
+              <strong>تحرير الذاكرة الخلفية:</strong> يُستخدم فقط عند ضغط المستخدم على زر التعزيز في "معزّز الألعاب" لتحرير ذاكرة RAM من العمليات الخلفية غير المستثناة.
+            </li>
+            <li>
+              <span class="perm-badge">WRITE_EXTERNAL_STORAGE (maxSdkVersion="28")</span><br />
+              <strong>تصدير ملفات الإعدادات على أندرويد 7–9 فقط:</strong> يُستخدم فقط على الإصدارات القديمة (API 24–28) لحفظ نسخة من ملف الإعدادات المصدّر في مجلد التنزيلات.
+            </li>
+            <li>
+              <span class="perm-badge">INTERNET • ACCESS_NETWORK_STATE • ACCESS_WIFI_STATE</span><br />
+              <strong>الاتصال بالشبكة:</strong> يُستخدم لقياس زمن الاستجابة (Ping) محلياً، ولتحميل إعلانات Google AdMob والتحقق من المشتريات والتحديثات عبر Google Play.
+            </li>
+          </ul>
+        </div>
 
-          <div class="en-col en-block">
-            <div class="section-header">
-              <div class="tile-icon tertiary">4</div>
-              <div>
-                <h2 class="section-title">Shizuku Bridge, File Access &amp; Package Visibility (&lt;queries&gt;)</h2>
-                <div class="section-subtitle">Configuration file management with automatic backups</div>
-              </div>
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon secondary">4</div>
+            <div>
+              <h2 class="section-title">Permissions &amp; Foreground Services Disclosure</h2>
+              <div class="section-subtitle">Complete breakdown of all AndroidManifest.xml declarations</div>
             </div>
-            <ul>
-              <li><strong>Optional Shizuku &amp; SAF Access:</strong> The Application integrates with <code>moe.shizuku.privileged.api</code> or Android's Storage Access Framework (SAF) strictly at your request to back up and apply game graphics configuration files (<code>Active.sav</code> and <code>UserCustom.ini</code>). It never accesses personal photos, media, or documents.</li>
-              <li><strong>Package Visibility (<code>&lt;queries&gt;</code>):</strong> The manifest declares specific supported game packages and Shizuku solely to detect locally which game edition is installed on your device. Your installed package list is never collected, logged, or transmitted.</li>
-            </ul>
           </div>
+          <ul>
+            <li>
+              <span class="perm-badge">SYSTEM_ALERT_WINDOW</span><br />
+              <strong>Display Over Other Apps:</strong> Used strictly when the user manually activates the floating Crosshair Reticle (<code>CrosshairOverlayService</code>) or Floating Aspect Slider Pill (<code>QuickControlOverlayService</code>). It never reads screen content or captures user inputs.
+            </li>
+            <li>
+              <span class="perm-badge">FOREGROUND_SERVICE • FOREGROUND_SERVICE_SPECIAL_USE • POST_NOTIFICATIONS</span><br />
+              <strong>Foreground Services &amp; Notifications:</strong> Used solely to run user-started tools (Crosshair Overlay, Quick Aspect Pill, Local Network Focus, Shizuku Net Priority, or High-Rate Gyroscope Lock) with a persistent notification providing an instant "Stop" action.
+            </li>
+            <li>
+              <span class="perm-badge">WRITE_SETTINGS • WRITE_SECURE_SETTINGS</span><br />
+              <strong>System Display &amp; Touch Settings:</strong> Used strictly upon explicit user command to toggle max brightness, pointer speed, or display refresh rate pinning (<code>peak_refresh_rate</code> / <code>min_refresh_rate</code>), with automatic backup and one-tap restore.
+            </li>
+            <li>
+              <span class="perm-badge">HIGH_SAMPLING_RATE_SENSORS</span><br />
+              <strong>High-Rate Gyroscope Sensor (&gt;200Hz):</strong> Used purely on-device for the Reflex &amp; Aim Trainer and user-started Gyroscope Responsiveness lock (<code>GyroResponsivenessService</code>). Sensor data is processed in RAM and never stored or transmitted.
+            </li>
+            <li>
+              <span class="perm-badge">KILL_BACKGROUND_PROCESSES • WAKE_LOCK</span><br />
+              <strong>Background Memory Optimization:</strong> Used only when the user taps Boost in Game Booster to free background RAM from non-excluded background processes.
+            </li>
+            <li>
+              <span class="perm-badge">WRITE_EXTERNAL_STORAGE (maxSdkVersion="28")</span><br />
+              <strong>Legacy Export Fallback (Android 7–9 only):</strong> Used solely on API 24–28 when exporting configuration backups to the Downloads directory.
+            </li>
+            <li>
+              <span class="perm-badge">INTERNET • ACCESS_NETWORK_STATE • ACCESS_WIFI_STATE</span><br />
+              <strong>Network Access:</strong> Used to measure connection ping/jitter locally, serve Google AdMob ads, and verify Google Play Billing purchases and mandatory app updates.
+            </li>
+          </ul>
         </div>
       </article>
 
-      <!-- Section 5: Data Retention, Deletion & User Rights -->
+      <!-- Section 5: Shizuku, SAF Storage & Package Visibility -->
+      <article class="expressive-item middle">
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon primary">5</div>
+            <div>
+              <h2 class="section-title">تكامل Shizuku وSAF ورؤية الحزم (&lt;queries&gt;)</h2>
+              <div class="section-subtitle">إدارة ملفات الإعدادات بأمان مع نسخ احتياطي تلقائي</div>
+            </div>
+          </div>
+          <ul>
+            <li><strong>الربط الاختياري مع Shizuku وSAF:</strong> يدعم التطبيق الربط الاختياري مع خدمة <code>moe.shizuku.privileged.api</code> أو إطار الوصول للتخزين في أندرويد (SAF) بطلب منك فقط لقراءة وكتابة ملفات إعدادات الرسوميات والإطارات (<code>Active.sav</code> و<code>UserCustom.ini</code>) وحفظ نسخة احتياطية قبل أي تعديل. لا يصل التطبيق إلى صورك أو ملفاتك الشخصية.</li>
+            <li><strong>رؤية الحزم المحددة (<code>&lt;queries&gt;</code>):</strong> يعلن التطبيق عن حزم إصدارات اللعبة المدعومة وحزمة Shizuku فقط للتحقق محلياً على جهازك من الإصدار المثبّت. لا يتم جمع أو إرسال قائمة التطبيقات المثبّتة على جهازك لأي جهة.</li>
+          </ul>
+        </div>
+
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon primary">5</div>
+            <div>
+              <h2 class="section-title">Shizuku Bridge, SAF Storage &amp; Package Visibility (&lt;queries&gt;)</h2>
+              <div class="section-subtitle">Safe configuration management with automatic backups</div>
+            </div>
+          </div>
+          <ul>
+            <li><strong>Optional Shizuku &amp; SAF Access:</strong> Integrates with <code>moe.shizuku.privileged.api</code> or Android's Storage Access Framework (SAF) strictly upon user action to back up and apply game graphics and frame rate configuration files (<code>Active.sav</code> and <code>UserCustom.ini</code>). It never accesses personal photos, media, or documents.</li>
+            <li><strong>Scoped Package Visibility (<code>&lt;queries&gt;</code>):</strong> Declares specific supported game packages and Shizuku in the manifest solely to detect locally which edition is installed on your device. Your installed app list is never collected or transmitted.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Section 6: Data Retention, Deletion, Children's Privacy & Disclaimer -->
       <article class="expressive-item bottom">
-        <div class="bilingual-grid">
-          <div class="ar-col ar-block">
-            <div class="section-header">
-              <div class="tile-icon primary">5</div>
-              <div>
-                <h2 class="section-title">حذف البيانات، خصوصية الأطفال، وإخلاء المسؤولية</h2>
-                <div class="section-subtitle">التحكم الكامل ببياناتك المحلية وحقوق GDPR / CCPA / COPPA</div>
-              </div>
+        <div class="lang-ar">
+          <div class="section-header">
+            <div class="tile-icon good">6</div>
+            <div>
+              <h2 class="section-title">حذف البيانات، خصوصية الأطفال، وإخلاء المسؤولية</h2>
+              <div class="section-subtitle">التحكم الكامل بالبيانات المحلية والامتثال لـ GDPR / CCPA / COPPA</div>
             </div>
-            <ul>
-              <li><strong>حذف البيانات وإعادة الضبط:</strong> يمكنك مسح جميع التفضيلات والملفات المحفوظة والنسخ الاحتياطية فوراً من داخل التطبيق عبر زر <strong>"إعادة ضبط الإعدادات" (Reset App Settings)</strong> في شاشة الإعدادات، أو عبر مسح بيانات التطبيق من إعدادات أندرويد أو إلغاء تثبيته.</li>
-              <li><strong>خصوصية الأطفال (COPPA):</strong> لا يجمع التطبيق أي بيانات من أي فئة عمرية بما في ذلك الأطفال دون سن 13 عاماً.</li>
-              <li><strong>إخلاء المسؤولية:</strong> هذا التطبيق أداة مستقلة لتحسين العرض والأداء، وهو غير تابع أو معتمد رسمياً من Krafton, Inc. أو Tencent Games أو Level Infinite أو PUBG Corporation أو Shizuku.</li>
-              <li><strong>التواصل معنا:</strong> لأي استفسارات تتعلق بسياسة الخصوصية، يمكنك التواصل عبر صفحة المطور الرسمية في متجر Google Play أو عبر البريد الإلكتروني الموضح في صفحة المتجر.</li>
-            </ul>
           </div>
+          <ul>
+            <li><strong>حذف البيانات وإعادة الضبط الفوري:</strong> يمكنك مسح جميع التفضيلات وملفات GFX المحفوظة والنسخ الاحتياطية فوراً من داخل التطبيق عبر زر <strong>"إعادة ضبط الإعدادات" (Reset App Settings)</strong> في تبويب الإعدادات، أو عبر مسح بيانات التطبيق من إعدادات أندرويد أو إلغاء تثبيت التطبيق.</li>
+            <li><strong>خصوصية الأطفال (COPPA):</strong> التطبيق غير موجّه للأطفال دون سن 13 عاماً، وتم ضبط طلبات إعلانات AdMob على عدم التوجيه للأطفال (<code>TAG_FOR_CHILD_DIRECTED_TREATMENT_FALSE</code>).</li>
+            <li><strong>إخلاء المسؤولية القانوني:</strong> تطبيق <strong>90 FPS + 120 FPS: GFX Booster</strong> هو أداة مستقلة لتحسين العرض والأداء والتدريب على التصويب، وهو غير تابع أو معتمد أو مدعوم رسمياً من Krafton, Inc. أو Tencent Games أو Level Infinite أو PUBG Corporation أو Shizuku. جميع العلامات التجارية تعود لمالكيها الأصليين.</li>
+            <li><strong>التواصل معنا:</strong> لأي استفسارات تتعلق بسياسة الخصوصية، يرجى التواصل معنا عبر البريد الإلكتروني للدعم الموضح في صفحة التطبيق الرسمية على متجر Google Play.</li>
+          </ul>
+        </div>
 
-          <div class="en-col en-block">
-            <div class="section-header">
-              <div class="tile-icon primary">5</div>
-              <div>
-                <h2 class="section-title">Data Deletion, Children's Privacy &amp; Disclaimer</h2>
-                <div class="section-subtitle">Full local data control &amp; GDPR / CCPA / COPPA compliance</div>
-              </div>
+        <div class="lang-en">
+          <div class="section-header">
+            <div class="tile-icon good">6</div>
+            <div>
+              <h2 class="section-title">Data Deletion, Children's Privacy &amp; Legal Disclaimer</h2>
+              <div class="section-subtitle">Full user control &amp; GDPR / CCPA / COPPA compliance</div>
             </div>
-            <ul>
-              <li><strong>Data Retention &amp; Instant Deletion:</strong> Because all preferences, profiles, and backups reside solely on your device, you can permanently delete all stored data at any time by tapping <strong>"Reset App Settings"</strong> inside the app's Settings tab, clearing app storage in Android Settings, or uninstalling the Application.</li>
-              <li><strong>Children's Privacy (COPPA):</strong> We do not knowingly or unknowingly collect any personal information from anyone, including children under the age of 13.</li>
-              <li><strong>Independent Utility Disclaimer:</strong> 90 FPS + 120 FPS: GFX Booster is an independent display, configuration, and aim-training utility and is not affiliated with, endorsed by, or sponsored by Krafton, Inc., Tencent Games, Level Infinite, PUBG Corporation, or Shizuku.</li>
-              <li><strong>Contact Us:</strong> For any questions regarding this Privacy Policy or data practices, please contact us via the developer support email listed on our official Google Play Store listing page.</li>
-            </ul>
           </div>
+          <ul>
+            <li><strong>Instant Data Deletion &amp; Reset:</strong> You can permanently wipe all local preferences, saved GFX profiles, and backups at any time by tapping <strong>"Reset App Settings"</strong> in the app's Settings tab, clearing storage in Android Settings, or uninstalling the Application.</li>
+            <li><strong>Children's Privacy (COPPA):</strong> The Application is not directed to children under 13, and AdMob requests are configured with <code>TAG_FOR_CHILD_DIRECTED_TREATMENT_FALSE</code>.</li>
+            <li><strong>Independent Utility Disclaimer:</strong> <strong>90 FPS + 120 FPS: GFX Booster</strong> is an independent display, performance, and aim-training utility and is not affiliated with, endorsed by, or sponsored by Krafton, Inc., Tencent Games, Level Infinite, PUBG Corporation, or Shizuku. All trademarks belong to their respective owners.</li>
+            <li><strong>Contact Us:</strong> For any questions or requests regarding this Privacy Policy, please contact us via the developer support email listed on our official Google Play Store page.</li>
+          </ul>
         </div>
       </article>
 
     </div>
 
     <footer class="footer">
-      90 FPS + 120 FPS: GFX Booster • Version 2.0.0 • Material 3 Expressive Privacy &amp; Data Safety Center
+      <span class="lang-ar">90 FPS + 120 FPS: GFX Booster • الإصدار 2.0.0 (22) • الحزمة com.english.save.words • جميع الحقوق محفوظة</span>
+      <span class="lang-en">90 FPS + 120 FPS: GFX Booster • Version 2.0.0 (22) • Package com.english.save.words • All Rights Reserved</span>
     </footer>
 
   </main>
 
   <script>
-    function setLang(mode, btn) {
-      document.body.setAttribute('data-lang', mode);
-      if (mode === 'en') {
+    function setLang(mode) {
+      const normalized = (mode === 'en') ? 'en' : 'ar';
+      document.body.setAttribute('data-lang', normalized);
+      if (normalized === 'en') {
         document.documentElement.setAttribute('dir', 'ltr');
         document.documentElement.setAttribute('lang', 'en');
       } else {
         document.documentElement.setAttribute('dir', 'rtl');
         document.documentElement.setAttribute('lang', 'ar');
       }
-      const group = btn.parentElement.querySelectorAll('.seg-btn');
-      group.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      document.getElementById('btn-lang-ar').classList.toggle('active', normalized === 'ar');
+      document.getElementById('btn-lang-en').classList.toggle('active', normalized === 'en');
     }
 
-    function setTheme(theme, btn) {
-      document.documentElement.setAttribute('data-theme', theme);
-      const group = btn.parentElement.querySelectorAll('.seg-btn');
-      group.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+    function setTheme(theme) {
+      const normalized = (theme === 'light') ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', normalized);
+      document.getElementById('btn-theme-dark').classList.toggle('active', normalized === 'dark');
+      document.getElementById('btn-theme-light').classList.toggle('active', normalized === 'light');
     }
+
+    // Automatically select English or Arabic based on URL query (?lang=en / ?lang=ar) or browser language
+    (function initLang() {
+      const params = new URLSearchParams(window.location.search);
+      const qLang = (params.get('lang') || '').toLowerCase();
+      if (qLang === 'en' || qLang === 'ar') {
+        setLang(qLang);
+      } else {
+        const navLang = (navigator.language || 'ar').toLowerCase();
+        setLang(navLang.startsWith('ar') ? 'ar' : 'en');
+      }
+    })();
   </script>
 </body>
 </html>
